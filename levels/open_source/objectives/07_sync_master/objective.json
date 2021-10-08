@@ -1,0 +1,17 @@
+{
+  "title": "Contributing to Open Source: Sync our Fork",
+  "description": "We've made our change! Lets make sure we have all the latest changes.",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "prompt",
+      "type": "prompt",
+      "placeholder": "",
+      "label": "Click HACK once you've synced your repositories!"
+    }
+  ],
+  "rewards": {
+    "xp": 0,
+    "items": []
+  }
+}

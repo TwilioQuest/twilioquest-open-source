@@ -1,0 +1,17 @@
+{
+  "title": "Contributing to Open Source: Push Upstream",
+  "description": "Now that you have made your change, <strong>push your change upstream</strong> to your forked repository on GitHub.",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "prompt",
+      "type": "prompt",
+      "placeholder": "",
+      "label": "Click HACK once you've pushed your pixel upstream!"
+    }
+  ],
+  "rewards": {
+    "xp": 100,
+    "items": []
+  }
+}

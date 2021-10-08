@@ -1,0 +1,17 @@
+{
+  "title": "Contributing to Open Source: Commit Hash",
+  "description": "You found a secret chest! Learn how to find the commit hash for your changes to open it.",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "commitHash",
+      "type": "text",
+      "placeholder": "XXXXXXXXXXXXXXXXXX",
+      "label": "Enter the commit hash of your new pixel commit here!"
+    }
+  ],
+  "rewards": {
+    "xp": 200,
+    "items": []
+  }
+}

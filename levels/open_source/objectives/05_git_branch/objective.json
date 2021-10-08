@@ -1,0 +1,17 @@
+{
+  "title": "Contributing to Open Source: Make a Branch",
+  "description": "Create a <strong>branch</strong> in your local git repository to contain the changes you are about to make to the project.",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "branchName",
+      "type": "text",
+      "placeholder": "dev-branch",
+      "label": "Enter the name of the branch you create here!"
+    }
+  ],
+  "rewards": {
+    "xp": 200,
+    "items": []
+  }
+}

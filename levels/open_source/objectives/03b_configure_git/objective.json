@@ -1,0 +1,17 @@
+{
+  "title": "Contributing to Open Source: Configuring Git",
+  "description": "Configure a <strong>user name and email address</strong> to associate with your contributions to a repository.",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "prompt",
+      "type": "prompt",
+      "placeholder": "",
+      "label": "Click HACK once you've configured \"git\" with your username and email!"
+    }
+  ],
+  "rewards": {
+    "xp": 100,
+    "items": []
+  }
+}

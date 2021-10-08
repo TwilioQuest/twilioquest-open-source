@@ -1,0 +1,17 @@
+{
+  "title": "Contributing to Open Source: Join GitHub",
+  "description": "<strong>Create a GitHub account</strong> to contribute to open source projects that use GitHub to host their source code.",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "username",
+      "type": "text",
+      "placeholder": "e.g. samantha_smith99",
+      "label": "Enter your GitHub username here."
+    }
+  ],
+  "rewards": {
+    "xp": 100,
+    "items": ["octocat_ears"]
+  }
+}

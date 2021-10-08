@@ -1,0 +1,17 @@
+{
+  "title": "Contributing to Open Source: Author Your Contribution",
+  "description": "You are now ready to <strong>author your contribution</strong> to the project in a development branch. Let's write some code!",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "prompt",
+      "type": "prompt",
+      "placeholder": "",
+      "label": "Click HACK once you've committed your new pixel!"
+    }
+  ],
+  "rewards": {
+    "xp": 300,
+    "items": ["flame_of_open_source"]
+  }
+}

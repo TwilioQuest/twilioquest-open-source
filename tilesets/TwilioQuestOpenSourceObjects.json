@@ -8,7 +8,7 @@
  "margin":0,
  "name":"TwilioQuestOpenSourceObjects",
  "spacing":0,
- "tilecount":7,
+ "tilecount":8,
  "tiledversion":"1.6.0",
  "tileheight":32,
  "tiles":[
@@ -196,6 +196,36 @@
                  "value":true
                 }],
          "type":"druid5"
+        }, 
+        {
+         "id":7,
+         "image":"..\/objects\/brush\/Burnable_Brush.png",
+         "imageheight":24,
+         "imagewidth":24,
+         "objectgroup":
+            {
+             "draworder":"index",
+             "id":3,
+             "name":"",
+             "objects":[
+                    {
+                     "height":12,
+                     "id":2,
+                     "name":"",
+                     "rotation":0,
+                     "type":"",
+                     "visible":true,
+                     "width":24,
+                     "x":0,
+                     "y":12
+                    }],
+             "opacity":1,
+             "type":"objectgroup",
+             "visible":true,
+             "x":0,
+             "y":0
+            },
+         "type":"brush"
         }],
  "tilewidth":32,
  "type":"tileset",

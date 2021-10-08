@@ -1,0 +1,17 @@
+{
+  "title": "Contributing to Open Source: Fork a Repository",
+  "description": "Learn to <strong>create a fork</strong> of an open source project, so you can work on your own modifications and contributions.",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "prompt",
+      "type": "prompt",
+      "placeholder": "",
+      "label": "Click HACK once you've created your \"open-pixel-art\" fork!"
+    }
+  ],
+  "rewards": {
+    "xp": 100,
+    "items": []
+  }
+}

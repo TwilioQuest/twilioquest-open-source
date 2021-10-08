@@ -1,0 +1,17 @@
+{
+  "title": "Contributing to Open Source: Install Git",
+  "description": "Install the <strong>git command line tools</strong> so you can work with git repositories on your computer.",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "prompt",
+      "type": "prompt",
+      "placeholder": "",
+      "label": "Click HACK once you've ensured \"git\" is installed locally on your computer!"
+    }
+  ],
+  "rewards": {
+    "xp": 200,
+    "items": []
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Contributing to Open Source: Another One",
+  "description": "You know how to make an open source contribution now! Try contributing to another open source project.",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "repositoryOwner",
+      "type": "text",
+      "placeholder": "twilio-labs",
+      "label": "Enter the username of the group that owns the repository you contributed to here!"
+    },
+    {
+      "name": "repository",
+      "type": "text",
+      "placeholder": "open-pixel-art",
+      "label": "Enter the name of the repository you contributed to here!"
+    },
+    {
+      "name": "prNumber",
+      "type": "text",
+      "placeholder": "1",
+      "label": "Enter the number of the pull request you create here!"
+    }
+  ],
+  "rewards": {
+    "xp": 500,
+    "items": []
+  }
+}

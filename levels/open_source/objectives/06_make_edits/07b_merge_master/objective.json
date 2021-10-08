@@ -1,0 +1,17 @@
+{
+  "title": "Contributing to Open Source: Merge Master",
+  "description": "We've got our master branch synchronized, let's merge those changes into our new branch.",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "prompt",
+      "type": "prompt",
+      "placeholder": "",
+      "label": "Click HACK once you've updated your new branch via a merge!"
+    }
+  ],
+  "rewards": {
+    "xp": 0,
+    "items": []
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Contributing to Open Source: Merging!",
+  "description": "The last step in your journey is to get your pull request merged, let's learn how that works.",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "prompt",
+      "type": "prompt",
+      "placeholder": "",
+      "label": "Click HACK once your \"open-pixel-art\" Pull Request is merged!"
+    }
+  ],
+  "rewards": {
+    "xp": 250,
+    "items": []
+  },
+  "hidden": true
+}
