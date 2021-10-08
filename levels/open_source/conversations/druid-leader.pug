@@ -1,0 +1,22 @@
+-
+  const STATE_KEY = 'TQ_OPEN_SOURCE_WORLD_STATE';
+  const worldState = getState(STATE_KEY) || {};
+
+
+conversation(display_name="Druid Leader")
+  statement#default
+  responses
+  statements
+    statement#default
+      text.
+        Thank you for coming! I'll see to it my guards let you pass into the forest.
+
+
+-
+  // After conversation happens once, Operator gets leader's permission
+  const newWorldState = {
+    ...worldState,
+    leaderPermission: true
+  }
+  setState(STATE_KEY, newWorldState);
+        

@@ -5,5 +5,7 @@
   "engines": {
     "twilioquest": "3.1.44"
   },
-  "dependencies": {}
+  "dependencies": {
+    "lodash.merge": "^4.6.2"
+  }
 }
