@@ -132,7 +132,7 @@
                         {
                          "name":"levelName",
                          "type":"string",
-                         "value":"open-source"
+                         "value":"open_source"
                         }, 
                         {
                          "name":"mapName",
@@ -166,8 +166,8 @@
                  "type":"player",
                  "visible":true,
                  "width":0,
-                 "x":432,
-                 "y":528
+                 "x":336,
+                 "y":360
                 }, 
                 {
                  "height":0,
@@ -184,8 +184,8 @@
                  "type":"player",
                  "visible":true,
                  "width":0,
-                 "x":60,
-                 "y":498
+                 "x":48,
+                 "y":480
                 }, 
                 {
                  "gid":10806,
