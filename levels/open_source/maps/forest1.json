@@ -154,7 +154,7 @@
                 {
                  "height":0,
                  "id":257,
-                 "name":"player_entry1",
+                 "name":"player_entry_dev",
                  "point":true,
                  "properties":[
                         {
@@ -166,8 +166,8 @@
                  "type":"player",
                  "visible":true,
                  "width":0,
-                 "x":786,
-                 "y":354
+                 "x":432,
+                 "y":528
                 }, 
                 {
                  "height":0,
@@ -291,6 +291,12 @@
                  "height":24,
                  "id":265,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -303,6 +309,12 @@
                  "height":24,
                  "id":266,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -315,6 +327,12 @@
                  "height":24,
                  "id":267,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -327,6 +345,12 @@
                  "height":24,
                  "id":268,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -339,6 +363,12 @@
                  "height":24,
                  "id":269,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -351,6 +381,12 @@
                  "height":24,
                  "id":270,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -363,6 +399,12 @@
                  "height":24,
                  "id":271,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -375,6 +417,12 @@
                  "height":24,
                  "id":272,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -387,6 +435,12 @@
                  "height":24,
                  "id":273,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -399,6 +453,12 @@
                  "height":24,
                  "id":274,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -411,6 +471,12 @@
                  "height":24,
                  "id":275,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -423,6 +489,12 @@
                  "height":24,
                  "id":276,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -435,6 +507,12 @@
                  "height":24,
                  "id":277,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -447,6 +525,12 @@
                  "height":24,
                  "id":278,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -459,6 +543,12 @@
                  "height":24,
                  "id":279,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -471,6 +561,12 @@
                  "height":24,
                  "id":280,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -483,6 +579,12 @@
                  "height":24,
                  "id":282,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -495,6 +597,12 @@
                  "height":24,
                  "id":284,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -507,6 +615,12 @@
                  "height":24,
                  "id":285,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -519,6 +633,12 @@
                  "height":24,
                  "id":287,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -531,6 +651,12 @@
                  "height":24,
                  "id":288,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -543,6 +669,12 @@
                  "height":24,
                  "id":289,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -555,6 +687,12 @@
                  "height":24,
                  "id":290,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -567,6 +705,12 @@
                  "height":24,
                  "id":291,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -579,6 +723,12 @@
                  "height":24,
                  "id":292,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -591,6 +741,12 @@
                  "height":24,
                  "id":293,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -603,6 +759,12 @@
                  "height":24,
                  "id":294,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -615,6 +777,12 @@
                  "height":24,
                  "id":295,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -627,6 +795,12 @@
                  "height":24,
                  "id":296,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -639,6 +813,12 @@
                  "height":24,
                  "id":298,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -651,6 +831,12 @@
                  "height":24,
                  "id":299,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -663,6 +849,12 @@
                  "height":24,
                  "id":300,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -675,6 +867,12 @@
                  "height":24,
                  "id":301,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -687,6 +885,12 @@
                  "height":24,
                  "id":303,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -699,6 +903,12 @@
                  "height":24,
                  "id":304,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -711,6 +921,12 @@
                  "height":24,
                  "id":305,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -723,6 +939,12 @@
                  "height":24,
                  "id":306,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -735,6 +957,12 @@
                  "height":24,
                  "id":307,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -747,6 +975,12 @@
                  "height":24,
                  "id":308,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -759,6 +993,12 @@
                  "height":24,
                  "id":309,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -771,6 +1011,12 @@
                  "height":24,
                  "id":310,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -783,6 +1029,12 @@
                  "height":24,
                  "id":311,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -795,6 +1047,12 @@
                  "height":24,
                  "id":312,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -807,6 +1065,12 @@
                  "height":24,
                  "id":313,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -819,6 +1083,12 @@
                  "height":24,
                  "id":314,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -831,6 +1101,12 @@
                  "height":24,
                  "id":315,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -843,6 +1119,12 @@
                  "height":24,
                  "id":316,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -855,6 +1137,12 @@
                  "height":24,
                  "id":317,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -867,6 +1155,12 @@
                  "height":24,
                  "id":318,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -879,6 +1173,12 @@
                  "height":24,
                  "id":319,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -891,6 +1191,12 @@
                  "height":24,
                  "id":320,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -903,6 +1209,12 @@
                  "height":24,
                  "id":321,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -915,6 +1227,12 @@
                  "height":24,
                  "id":322,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -927,6 +1245,12 @@
                  "height":24,
                  "id":323,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -939,6 +1263,12 @@
                  "height":24,
                  "id":324,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -951,6 +1281,12 @@
                  "height":24,
                  "id":325,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -975,6 +1311,892 @@
                  "width":24,
                  "x":192,
                  "y":492
+                }, 
+                {
+                 "height":0,
+                 "id":329,
+                 "name":"player_entry1",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"initialFacing",
+                         "type":"string",
+                         "value":"left"
+                        }],
+                 "rotation":0,
+                 "type":"player",
+                 "visible":true,
+                 "width":0,
+                 "x":786,
+                 "y":342
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":331,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"2"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":420,
+                 "y":420
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":332,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"3"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":468,
+                 "y":420
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":333,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"1"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":372,
+                 "y":624
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":338,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"1"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":420,
+                 "y":600
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":339,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"1"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":510,
+                 "y":552
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":340,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"1"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":582,
+                 "y":570
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":341,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"1"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":300,
+                 "y":660
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":342,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"1"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":372,
+                 "y":558
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":343,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"2"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":468,
+                 "y":582
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":344,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"2"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":354,
+                 "y":618
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":345,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"2"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":522,
+                 "y":582
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":346,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"2"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":534,
+                 "y":564
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":347,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"2"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":630,
+                 "y":540
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":348,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"2"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":270,
+                 "y":648
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":349,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"3"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":498,
+                 "y":594
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":350,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"3"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":516,
+                 "y":540
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":351,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"3"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":402,
+                 "y":582
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":352,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushLower_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"3"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":570,
+                 "y":600
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":353,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"1"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":384,
+                 "y":420
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":354,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"1"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":246,
+                 "y":198
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":355,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"1"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":198,
+                 "y":192
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":356,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"1"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":210,
+                 "y":282
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":357,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"1"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":162,
+                 "y":276
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":358,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"1"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":186,
+                 "y":246
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":359,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"2"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":222,
+                 "y":204
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":360,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"2"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":132,
+                 "y":246
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":361,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"2"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":132,
+                 "y":282
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":362,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"3"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":228,
+                 "y":204
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":363,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"3"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":222,
+                 "y":216
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":364,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"3"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":156,
+                 "y":210
+                }, 
+                {
+                 "gid":10808,
+                 "height":26,
+                 "id":365,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"hidden",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"key",
+                         "type":"string",
+                         "value":"forest1BrushUpper_flame"
+                        }, 
+                        {
+                         "name":"stage",
+                         "type":"string",
+                         "value":"3"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":180,
+                 "y":258
                 }],
          "opacity":1,
          "properties":[
@@ -1075,13 +2297,13 @@
                  "value":true
                 }],
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":35,
          "x":0,
          "y":0
         }],
  "nextlayerid":35,
- "nextobjectid":329,
+ "nextobjectid":366,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.6.0",

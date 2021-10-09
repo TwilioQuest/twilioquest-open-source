@@ -225,6 +225,12 @@
              "x":0,
              "y":0
             },
+         "properties":[
+                {
+                 "name":"interactable",
+                 "type":"bool",
+                 "value":true
+                }],
          "type":"brush"
         }],
  "tilewidth":32,
