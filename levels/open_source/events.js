@@ -1,6 +1,6 @@
 const merge = require("lodash.merge");
 const { updateBrushState, renderBrush } = require("./events/brush");
-const { processFlameThrowerEvents } = require("./events/flamethrower");
+const { renderFlames } = require("./events/flames");
 const { updateLayerState, renderLayers } = require("./events/layers");
 
 const INITIAL_STATE = {
@@ -51,6 +51,7 @@ module.exports = function (event, world) {
 
   renderLayers(world, worldState);
   renderBrush(world, worldState);
+  renderFlames(world, worldState);
 
   world.setState(WORLD_STATE_KEY, worldState);
 };

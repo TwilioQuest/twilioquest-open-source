@@ -1,5 +1,8 @@
 function updateLayerState(event, world, worldState) {
-  if (event.name === "triggerAreaWasEntered") {
+  if (
+    event.name === "triggerAreaWasEntered" ||
+    event.name === "triggerAreaWasExited"
+  ) {
     if (event.target.key === "upperSpawnTrigger") {
       worldState.layers.current = "upper";
       worldState.layers.lastTriggerEntered = "layerTriggerUpper";
@@ -9,7 +12,9 @@ function updateLayerState(event, world, worldState) {
       worldState.layers.current = "lower";
       worldState.layers.lastTriggerEntered = "layerTriggerLower";
     }
+  }
 
+  if (event.name === "triggerAreaWasEntered") {
     if (
       event.target.key === "layerTriggerUpper" ||
       event.target.key === "layerTriggerLower"

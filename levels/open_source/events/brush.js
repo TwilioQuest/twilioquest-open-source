@@ -24,6 +24,16 @@ async function updateBrushState(event, world, worldState) {
 
     await useFlameThrower(world, event.target.key);
 
+    // We need to ensure we've hidden the player's exclamation point.
+    //
+    // The player probably has the exclamation point popped since they're
+    // in interaction range of the bushes.
+    //
+    // Once the bushes are destroyed, the player's exclamation point won't
+    // be closed naturally.
+    world.__internals.level.player.overlappingPoi.action("notOverlapping");
+    world.__internals.level.player.inRangeObject = undefined;
+
     world.destroyEntities(event.target.key);
     world.destroyEntities(`${event.target.key}_flame`);
   }
