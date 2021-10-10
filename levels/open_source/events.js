@@ -6,6 +6,7 @@ const { updateLayerState, renderLayers } = require("./events/layers");
 const INITIAL_STATE = {
   leaderPermission: false,
   flameUnlocked: false,
+  finishedParty: false,
   layers: { current: "upper", lastTriggerEntered: "layerTriggerUpper" },
   brush: {
     brushBurned: {},
@@ -44,6 +45,23 @@ module.exports = function (event, world) {
     if (event.target.key === "guardForbiddenTrigger") {
       world.startConversation("druid-guard-forbidden", "druid2.png");
     }
+
+    if (event.target.key === "afterPartyTrigger") {
+      worldState.finishedParty = true;
+    }
+
+    if (
+      event.target.key === "guardPartyForbiddenTrigger" &&
+      !worldState.finishedParty
+    ) {
+      world.startConversation("druid-guard-forbidden", "druid2.png");
+    }
+  }
+
+  if (worldState.finishedParty) {
+    world.destroyEntities("druidGuardPartyForbidden");
+    world.showEntities("druidGuardPartyAllowed");
+    world.destroyEntities("colliderAfterParty");
   }
 
   updateLayerState(event, world, worldState);

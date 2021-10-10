@@ -2352,6 +2352,24 @@
                  "width":24,
                  "x":180,
                  "y":258
+                }, 
+                {
+                 "height":0,
+                 "id":366,
+                 "name":"player_entry3",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"initialFacing",
+                         "type":"string",
+                         "value":"up"
+                        }],
+                 "rotation":0,
+                 "type":"player",
+                 "visible":true,
+                 "width":0,
+                 "x":432,
+                 "y":642
                 }],
          "opacity":1,
          "properties":[
@@ -2458,7 +2476,7 @@
          "y":0
         }],
  "nextlayerid":35,
- "nextobjectid":366,
+ "nextobjectid":367,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.6.0",
