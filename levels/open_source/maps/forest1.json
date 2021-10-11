@@ -267,7 +267,7 @@
                         {
                          "name":"levelName",
                          "type":"string",
-                         "value":"open-source"
+                         "value":"open_source"
                         }, 
                         {
                          "name":"mapName",
