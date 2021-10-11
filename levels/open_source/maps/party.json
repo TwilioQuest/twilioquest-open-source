@@ -269,24 +269,6 @@
                  "y":576
                 }, 
                 {
-                 "gid":10797,
-                 "height":24,
-                 "id":388,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"objectiveName",
-                         "type":"string",
-                         "value":"11_check_merge"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":24,
-                 "x":576,
-                 "y":684
-                }, 
-                {
                  "gid":10806,
                  "height":72,
                  "id":389,

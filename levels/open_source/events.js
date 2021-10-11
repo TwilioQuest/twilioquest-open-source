@@ -7,6 +7,7 @@ const INITIAL_STATE = {
   leaderPermission: false,
   flameUnlocked: false,
   finishedParty: false,
+  showedOpenBridge: false,
   layers: { current: "upper", lastTriggerEntered: "layerTriggerUpper" },
   brush: {
     brushBurned: [],
@@ -35,6 +36,26 @@ module.exports = async function (event, world) {
   }
 
   if (event.name === "triggerAreaWasEntered") {
+    if (event.target.key === "lookAtLeader" && !worldState.leaderPermission) {
+      world.forEachEntities("leaderViewpoint", async (viewpoint) => {
+        world.disablePlayerMovement();
+
+        await world.tweenCameraToPosition({
+          x: viewpoint.startX,
+          y: viewpoint.startY,
+        });
+
+        world.showNotification(`
+          I should talk to the village leader first thing!
+        `);
+
+        await world.wait(3000);
+        await world.tweenCameraToPlayer();
+
+        world.enablePlayerMovement();
+      });
+    }
+
     if (
       event.target.key === "guardForbiddenLeaderTrigger" &&
       !worldState.leaderPermission
@@ -55,6 +76,29 @@ module.exports = async function (event, world) {
       !worldState.finishedParty
     ) {
       world.startConversation("druid-guard-forbidden", "druid2.png");
+    }
+  }
+
+  if (event.name === "conversationDidEnd") {
+    if (worldState.leaderPermission && !worldState.showedOpenBridge) {
+      world.forEachEntities("bridgeViewpoint", async (viewpoint) => {
+        world.disablePlayerMovement();
+
+        await world.tweenCameraToPosition({
+          x: viewpoint.startX,
+          y: viewpoint.startY,
+        });
+
+        world.showNotification(`
+          The way down into the forest is open now!
+        `);
+
+        await world.wait(3000);
+        await world.tweenCameraToPlayer();
+
+        world.enablePlayerMovement();
+        worldState.showedOpenBridge = true;
+      });
     }
   }
 
