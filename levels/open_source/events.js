@@ -9,14 +9,14 @@ const INITIAL_STATE = {
   finishedParty: false,
   layers: { current: "upper", lastTriggerEntered: "layerTriggerUpper" },
   brush: {
-    brushBurned: {},
+    brushBurned: [],
   },
 };
 
 const WORLD_STATE_KEY = "TQ_OPEN_SOURCE_WORLD_STATE";
 const FLAME_UNLOCK_MISSION_NAME = "06_make_edits";
 
-module.exports = function (event, world) {
+module.exports = async function (event, world) {
   const worldState = merge(INITIAL_STATE, world.getState(WORLD_STATE_KEY));
 
   if (
@@ -65,7 +65,7 @@ module.exports = function (event, world) {
   }
 
   updateLayerState(event, world, worldState);
-  updateBrushState(event, world, worldState);
+  await updateBrushState(event, world, worldState);
 
   renderLayers(world, worldState);
   renderBrush(world, worldState);
