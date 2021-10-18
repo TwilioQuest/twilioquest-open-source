@@ -1,7 +1,7 @@
 {
   "title": "The Forest of Open Source",
-  "description": "The Druids of Open Source have protected this sacred forest world for generations, helping those that wish to contribute to open source projects. There's not much to see here yet, though!",
-  "questDescription": "Nothing to see here - head back to the Fog Owl!",
+  "description": "The Druids of Open Source have protected this sacred forest world for generations, helping those that wish to contribute to open source projects. Local reports have come in that the path to the Flame of Open Source, a sacred artifact, have been cut off. Investigate as soon as you can!",
+  "questDescription": "Explore the forest and unblock the path to the Flame of Open Source.",
   "navMap": {
     "x": 75,
     "y": 10,
