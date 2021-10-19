@@ -46,7 +46,8 @@ module.exports = async function (event, world) {
         });
 
         world.showNotification(`
-          I should talk to the village leader first thing!
+          <i>I think I need to speak to the village leader before I can move
+          further into the forest.</i>
         `);
 
         await world.wait(3000);
@@ -90,7 +91,8 @@ module.exports = async function (event, world) {
         });
 
         world.showNotification(`
-          The way down into the forest is open now!
+          <i>It would appear the way down into the forest is clear.
+          Now, to find the <em>Flame of Open Source...</em></i>
         `);
 
         await world.wait(3000);

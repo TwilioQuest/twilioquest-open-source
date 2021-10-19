@@ -227,6 +227,11 @@
                          "name":"key",
                          "type":"string",
                          "value":"druidGuardLeaderAllowed"
+                        }, 
+                        {
+                         "name":"observation",
+                         "type":"string",
+                         "value":"<i>The stoic guardian of the forest calmly acknowledges your presence, but does not seem interested in idle conversation...<\/i>"
                         }],
                  "rotation":0,
                  "type":"",
@@ -250,6 +255,11 @@
                          "name":"key",
                          "type":"string",
                          "value":"druidGuardLeaderForbidden"
+                        }, 
+                        {
+                         "name":"observation",
+                         "type":"string",
+                         "value":"<i>The stoic guardian of the forest calmly acknowledges your presence, but does not seem interested in idle conversation...<\/i>"
                         }],
                  "rotation":0,
                  "type":"",
@@ -273,6 +283,11 @@
                          "name":"key",
                          "type":"string",
                          "value":"druidGuardLeaderForbidden"
+                        }, 
+                        {
+                         "name":"observation",
+                         "type":"string",
+                         "value":"<i>The stoic guardian of the forest calmly acknowledges your presence, but does not seem interested in idle conversation...<\/i>"
                         }],
                  "rotation":0,
                  "type":"",
@@ -296,6 +311,11 @@
                          "name":"key",
                          "type":"string",
                          "value":"druidGuardPartyForbidden"
+                        }, 
+                        {
+                         "name":"observation",
+                         "type":"string",
+                         "value":"<i>The stoic guardian of the forest calmly acknowledges your presence, but does not seem interested in idle conversation...<\/i>"
                         }],
                  "rotation":0,
                  "type":"",
@@ -314,6 +334,11 @@
                          "name":"conversation",
                          "type":"string",
                          "value":"druid-guard-forbidden"
+                        }, 
+                        {
+                         "name":"observation",
+                         "type":"string",
+                         "value":"<i>The stoic guardian of the forest calmly acknowledges your presence, but does not seem interested in idle conversation...<\/i>"
                         }],
                  "rotation":0,
                  "type":"",
@@ -332,6 +357,11 @@
                          "name":"conversation",
                          "type":"string",
                          "value":"druid-guard-forbidden"
+                        }, 
+                        {
+                         "name":"observation",
+                         "type":"string",
+                         "value":"<i>The stoic guardian of the forest calmly acknowledges your presence, but does not seem interested in idle conversation...<\/i>"
                         }],
                  "rotation":0,
                  "type":"",
@@ -355,6 +385,11 @@
                          "name":"key",
                          "type":"string",
                          "value":"druidGuardPartyForbidden"
+                        }, 
+                        {
+                         "name":"observation",
+                         "type":"string",
+                         "value":"<i>The stoic guardian of the forest calmly acknowledges your presence, but does not seem interested in idle conversation...<\/i>"
                         }],
                  "rotation":0,
                  "type":"",
@@ -413,6 +448,12 @@
                  "height":32,
                  "id":137,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"observation",
+                         "type":"string",
+                         "value":"<i>The vendors in the town square have a variety of wares from across The Cloud. You wish you have time to stop and browse.<\/i>"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -425,6 +466,12 @@
                  "height":32,
                  "id":139,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"observation",
+                         "type":"string",
+                         "value":"<i>The vendors in the town square have a variety of wares from across The Cloud. You wish you have time to stop and browse.<\/i>"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -437,6 +484,12 @@
                  "height":32,
                  "id":140,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"observation",
+                         "type":"string",
+                         "value":"<i>The vendors in the town square have a variety of wares from across The Cloud. You wish you have time to stop and browse.<\/i>"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -543,6 +596,11 @@
                          "name":"key",
                          "type":"string",
                          "value":"guardForbiddenLeaderTrigger"
+                        }, 
+                        {
+                         "name":"observation",
+                         "type":"string",
+                         "value":"<i>The stoic guardian of the forest calmly acknowledges your presence, but does not seem interested in idle conversation...<\/i>"
                         }],
                  "rotation":0,
                  "type":"triggerArea",
@@ -657,6 +715,11 @@
                          "name":"key",
                          "type":"string",
                          "value":"druidGuardLeaderAllowed"
+                        }, 
+                        {
+                         "name":"observation",
+                         "type":"string",
+                         "value":"<i>The stoic guardian of the forest calmly acknowledges your presence, but does not seem interested in idle conversation...<\/i>"
                         }],
                  "rotation":0,
                  "type":"",
@@ -709,6 +772,11 @@
                          "name":"key",
                          "type":"string",
                          "value":"druidGuardLeaderAllowed"
+                        }, 
+                        {
+                         "name":"observation",
+                         "type":"string",
+                         "value":"<i>The stoic guardian of the forest calmly acknowledges your presence, but does not seem interested in idle conversation...<\/i>"
                         }],
                  "rotation":0,
                  "type":"",
@@ -737,6 +805,11 @@
                          "name":"key",
                          "type":"string",
                          "value":"druidGuardLeaderAllowed"
+                        }, 
+                        {
+                         "name":"observation",
+                         "type":"string",
+                         "value":"<i>The stoic guardian of the forest calmly acknowledges your presence, but does not seem interested in idle conversation...<\/i>"
                         }],
                  "rotation":0,
                  "type":"",
@@ -760,6 +833,11 @@
                          "name":"key",
                          "type":"string",
                          "value":"druidGuardLeaderForbidden"
+                        }, 
+                        {
+                         "name":"observation",
+                         "type":"string",
+                         "value":"<i>The stoic guardian of the forest calmly acknowledges your presence, but does not seem interested in idle conversation...<\/i>"
                         }],
                  "rotation":0,
                  "type":"",
@@ -783,6 +861,11 @@
                          "name":"key",
                          "type":"string",
                          "value":"druidGuardLeaderForbidden"
+                        }, 
+                        {
+                         "name":"observation",
+                         "type":"string",
+                         "value":"<i>The stoic guardian of the forest calmly acknowledges your presence, but does not seem interested in idle conversation...<\/i>"
                         }],
                  "rotation":0,
                  "type":"",
@@ -2682,6 +2765,11 @@
                          "name":"key",
                          "type":"string",
                          "value":"druidGuardPartyAllowed"
+                        }, 
+                        {
+                         "name":"observation",
+                         "type":"string",
+                         "value":"<i>The stoic guardian of the forest calmly acknowledges your presence, but does not seem interested in idle conversation...<\/i>"
                         }],
                  "rotation":0,
                  "type":"",
@@ -2710,6 +2798,11 @@
                          "name":"key",
                          "type":"string",
                          "value":"druidGuardPartyAllowed"
+                        }, 
+                        {
+                         "name":"observation",
+                         "type":"string",
+                         "value":"<i>The stoic guardian of the forest calmly acknowledges your presence, but does not seem interested in idle conversation...<\/i>"
                         }],
                  "rotation":0,
                  "type":"",
@@ -3007,7 +3100,7 @@
  "nextobjectid":267,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.6.0",
+ "tiledversion":"1.7.2",
  "tileheight":24,
  "tilesets":[
         {
