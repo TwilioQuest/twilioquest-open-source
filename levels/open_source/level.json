@@ -1,6 +1,7 @@
 {
   "title": "The Forest of Open Source",
   "description": "The Druids of Open Source have protected this sacred forest world for generations, helping those that wish to contribute to open source projects. Local reports have come in that the path to the Flame of Open Source, a sacred artifact, has been cut off. Investigate as soon as you can!",
+  "questTitle": "Rescuing the Flame of Open Source",
   "questDescription": "Explore the forest and unblock the path to the Flame of Open Source.",
   "navMap": {
     "x": 75,
@@ -13,5 +14,18 @@
     "key": "starfield",
     "options": { "baseSpeed": 0.03, "direction": "topToBottom" }
   },
-  "flavorTextOverrides": {}
+  "flavorTextOverrides": {},
+  "objectives": [
+    "01_create_github",
+    "02_fork_project",
+    "03_install_git",
+    "03b_configure_git",
+    "04_git_clone",
+    "05_git_branch",
+    "06_make_edits",
+    "06b_commit_hash",
+    "08_push_upstream",
+    "09_make_pr",
+    "12_merge_another"
+  ]
 }

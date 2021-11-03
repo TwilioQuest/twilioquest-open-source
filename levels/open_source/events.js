@@ -2,6 +2,8 @@ const merge = require("lodash.merge");
 const { updateBrushState, renderBrush } = require("./events/brush");
 const { renderFlames } = require("./events/flames");
 const { updateLayerState, renderLayers } = require("./events/layers");
+const packageInfo = require("../../package.json");
+const updateQuestLogWhenComplete = require("./events/updateQuestLogWhenComplete");
 
 const INITIAL_STATE = {
   leaderPermission: false,
@@ -112,6 +114,16 @@ module.exports = async function (event, world) {
 
   updateLayerState(event, world, worldState);
   await updateBrushState(event, world, worldState);
+
+  updateQuestLogWhenComplete({
+    notification:
+      'I\'ve completed everything in the <span class="highlight">Forest of Open Source</span> for now!',
+    log: "I've completed everything in the Forest of Open Source for now!",
+    event,
+    world,
+    worldStateKey: WORLD_STATE_KEY,
+    version: packageInfo.version,
+  });
 
   renderLayers(world, worldState);
   renderBrush(world, worldState);
