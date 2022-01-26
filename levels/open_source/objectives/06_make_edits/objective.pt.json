@@ -1,0 +1,19 @@
+{
+  "title": "Contribuir para o open source: Escreva sua contribuição",
+  "description": "Agora você está pronto para <strong>escrever sua contribuição</strong> para o projeto em um branch em desenvolvimento. Vamos escrever um pouco de código!",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "prompt",
+      "type": "prompt",
+      "placeholder": "",
+      "label": "Clique em HACK depois de ter feito o commit para o seu novo pixel!"
+    }
+  ],
+  "rewards": {
+    "xp": 300,
+    "items": [
+      "flame_of_open_source"
+    ]
+  }
+}

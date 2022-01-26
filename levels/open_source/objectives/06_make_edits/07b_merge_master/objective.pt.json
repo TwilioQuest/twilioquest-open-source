@@ -1,0 +1,17 @@
+{
+  "title": "Contribuir para o open source: Mesclar o master",
+  "description": "Nós sincronizamos nosso branch master, vamos mesclar essas mudanças no novo branch.",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "prompt",
+      "type": "prompt",
+      "placeholder": "",
+      "label": "Clique em HACK depois de atualizar o novo branch por meio de um merge (mesclar)!"
+    }
+  ],
+  "rewards": {
+    "xp": 0,
+    "items": []
+  }
+}

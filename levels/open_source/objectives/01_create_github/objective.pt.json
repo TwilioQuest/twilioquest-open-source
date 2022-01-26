@@ -1,0 +1,19 @@
+{
+  "title": "Contribuir para o open source: Participe do GitHub",
+  "description": "<strong>Crie uma conta do GitHub account</strong> (Crie uma conta do GitHub) para contribuir com projetos de código-fonte aberto que usam o GitHub para hospedar o código-fonte.",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "username",
+      "type": "text",
+      "placeholder": "e.g. samantha_smith99",
+      "label": "Insira o nome de usuário do GitHub aqui."
+    }
+  ],
+  "rewards": {
+    "xp": 100,
+    "items": [
+      "octocat_ears"
+    ]
+  }
+}

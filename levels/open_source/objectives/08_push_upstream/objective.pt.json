@@ -1,0 +1,17 @@
+{
+  "title": "Contribuir para o open source: Enviar Upstream",
+  "description": "Agora que você fez a alteração, <strong>envie sua alteração upstream</strong> para o seu repositório no GitHub.",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "prompt",
+      "type": "prompt",
+      "placeholder": "",
+      "label": "Clique em HACK (HACKEAR) depois de enviar seu pixel upstream!"
+    }
+  ],
+  "rewards": {
+    "xp": 100,
+    "items": []
+  }
+}

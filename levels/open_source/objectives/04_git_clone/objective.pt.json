@@ -1,0 +1,17 @@
+{
+  "title": "Contribuir para o open source: Clonar um repositório",
+  "description": "Use as ferramentas de linha de comando git para <strong>clonar</strong> o fork do repositório Open Pixel Art, para que você possa trabalhar em sua contribuição!",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "repositoryFilePath",
+      "type": "text",
+      "placeholder": "C:\\projects\\open-pixel-art",
+      "label": "Insira o caminho do arquivo do repositório Open Pixel Art clonado recentemente."
+    }
+  ],
+  "rewards": {
+    "xp": 200,
+    "items": []
+  }
+}

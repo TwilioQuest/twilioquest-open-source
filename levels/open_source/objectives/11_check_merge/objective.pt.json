@@ -1,0 +1,18 @@
+{
+  "title": "Contribuir para o open source: Mesclar!",
+  "description": "A última etapa de sua jornada é mesclar sua pull request. Vamos aprender como isso funciona.",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "prompt",
+      "type": "prompt",
+      "placeholder": "",
+      "label": "Clique em HACK (HACKEAR) quando sua pull request “open-pixel-art” for mesclada!"
+    }
+  ],
+  "rewards": {
+    "xp": 250,
+    "items": []
+  },
+  "hidden": true
+}

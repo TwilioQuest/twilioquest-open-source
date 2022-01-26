@@ -1,0 +1,29 @@
+{
+  "title": "Contribuir para o open source: Outro",
+  "description": "Agora você sabe como fazer uma contribuição ao open source! Tente contribuir com outro projeto open source.",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "repositoryOwner",
+      "type": "text",
+      "placeholder": "twilio-labs",
+      "label": "Insira o nome de usuário do grupo proprietário do repositório para o qual você contribuiu!"
+    },
+    {
+      "name": "repository",
+      "type": "text",
+      "placeholder": "open-pixel-art",
+      "label": "Insira aqui o nome do repositório para o qual você contribuiu!"
+    },
+    {
+      "name": "prNumber",
+      "type": "text",
+      "placeholder": "1",
+      "label": "Insira o número da pull request criada aqui!"
+    }
+  ],
+  "rewards": {
+    "xp": 500,
+    "items": []
+  }
+}

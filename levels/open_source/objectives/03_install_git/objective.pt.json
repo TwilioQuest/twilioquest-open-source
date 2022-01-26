@@ -1,0 +1,17 @@
+{
+  "title": "Contribuir para o open source: Instale o Git",
+  "description": "Instale as <strong>ferramentas de linha de comando do git</strong> para que você possa trabalhar com repositórios do git no computador.",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "prompt",
+      "type": "prompt",
+      "placeholder": "",
+      "label": "Clique em HACK depois de ter certeza que o “Git” está instalado localmente no computador!"
+    }
+  ],
+  "rewards": {
+    "xp": 200,
+    "items": []
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Contribuir para o open source: Hash de commit",
+  "description": "Você encontrou um baú secreto! Saiba como encontrar o hash de commit das alterações para abri-lo.",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "commitHash",
+      "type": "text",
+      "placeholder": "XXXXXXXXXXXXXXXXXX",
+      "label": "Insira aqui o hash de commit do novo pixel!"
+    }
+  ],
+  "rewards": {
+    "xp": 200,
+    "items": []
+  }
+}

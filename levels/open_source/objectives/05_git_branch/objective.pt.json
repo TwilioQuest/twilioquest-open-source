@@ -1,0 +1,17 @@
+{
+  "title": "Contribuir para o open source: Faça um branch",
+  "description": "Crie um <strong>branch</strong> em seu repositório git local para conter as alterações que você está prestes a fazer no projeto.",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "branchName",
+      "type": "text",
+      "placeholder": "dev-branch",
+      "label": "Insira aqui o nome do branch que você criou!"
+    }
+  ],
+  "rewards": {
+    "xp": 200,
+    "items": []
+  }
+}

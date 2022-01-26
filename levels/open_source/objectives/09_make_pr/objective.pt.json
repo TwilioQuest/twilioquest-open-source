@@ -1,0 +1,19 @@
+{
+  "title": "Contribuir para o open source: Abrir uma pull request",
+  "description": "Envie sua contribuição para o projeto criando uma <strong>pull request</strong>.",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "prNumber",
+      "type": "text",
+      "placeholder": "pull request number",
+      "label": "Insira o número da pull request criada aqui!"
+    }
+  ],
+  "rewards": {
+    "xp": 100,
+    "items": [
+      "github_hoodie"
+    ]
+  }
+}

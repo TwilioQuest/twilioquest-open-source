@@ -1,0 +1,17 @@
+{
+  "title": "Contribuir para o open source: Sincronizar nosso fork",
+  "description": "Fizemos a mudança! Vamos garantir que tenhamos todas as alterações mais recentes.",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "prompt",
+      "type": "prompt",
+      "placeholder": "",
+      "label": "Clique em HACK (HACKEAR) depois de sincronizar os repositórios!"
+    }
+  ],
+  "rewards": {
+    "xp": 0,
+    "items": []
+  }
+}
