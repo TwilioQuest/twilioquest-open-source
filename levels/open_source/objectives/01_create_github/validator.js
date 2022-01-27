@@ -4,7 +4,7 @@ module.exports = async (helper) => {
   const username = helper.getNormalizedInput("username", { lowerCase: false });
 
   if (!username) {
-    return helper.fail(`Please enter the username of your GitHub account!`);
+    return helper.fail(helper.world.getTranslatedString('open_source.01_create_github.enter_github_account'));
   }
 
   try {
@@ -14,19 +14,13 @@ module.exports = async (helper) => {
 
     if (response.statusCode === 200) {
       return helper.success(
-        `We found your GitHub user, ${username}. Good job!`,
+        helper.world.getTranslatedString('open_source.01_create_github.username_found', { username }),
         [{ name: "GITHUB_USERNAME", value: username }]
       );
     } else {
-      helper.fail(
-        `We couldn't find the GitHub user, ${username}. Is there a typo in the username?`
-      );
+      helper.fail(helper.world.getTranslatedString('open_source.01_create_github.username_notfound', { username }));
     }
   } catch (err) {
-    helper.fail(
-      `Something went wrong when we tried to validate your GitHub username!
-      
-      ${err}`
-    );
+    helper.fail(helper.world.getTranslatedString('open_source.01_create_github.username_error', { err }));
   }
 };

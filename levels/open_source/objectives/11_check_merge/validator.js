@@ -13,9 +13,7 @@ module.exports = async helper => {
     );
 
     if (response.statusCode !== 200) {
-      helper.fail(
-        `We could not find the Pull Request #${TQ_OPEN_PIXEL_ART_PR_NUMBER} on the Open Pixel Art remote repository"!`
-      );
+      helper.fail(helper.world.getTranslatedString('open_source.11_check_merge.pr_not_found', { TQ_OPEN_PIXEL_ART_PR_NUMBER }));
       return;
     }
 
@@ -24,25 +22,19 @@ module.exports = async helper => {
     const isPrMerged = parsedResponseBody.merged === true;
 
     if (isPrClosed && !isPrMerged) {
-      helper.fail(
-        `We found the Pull Request #${TQ_OPEN_PIXEL_ART_PR_NUMBER} on the Open Pixel Art remote repository, but it was closed without being merged!`
-      );
+      helper.fail(helper.world.getTranslatedString('open_source.11_check_merge.pr_found_closed', { TQ_OPEN_PIXEL_ART_PR_NUMBER }));
       return;
     }
 
     if (!isPrMerged) {
-      helper.fail(
-        `We found the Pull Request #${TQ_OPEN_PIXEL_ART_PR_NUMBER} on the Open Pixel Art remote repository, but it has not been merged yet!`
-      );
+      helper.fail(helper.world.getTranslatedString('open_source.11_check_merge.pr_not_merged', { TQ_OPEN_PIXEL_ART_PR_NUMBER }));
       return;
     }
 
-    return helper.success(
-      `We found the Pull Request #${TQ_OPEN_PIXEL_ART_PR_NUMBER} on the Open Pixel Art remote repository and it has been merged! Congratulations on your open source contribution!`
-    );
+    return helper.success(helper.world.getTranslatedString('open_source.11_check_merge.success', { TQ_OPEN_PIXEL_ART_PR_NUMBER }));
   } catch (err) {
     helper.fail(
-      `Something went wrong when we tried to validate if your Open Pixel Art pull request was merged!
+      `${helper.world.getTranslatedString('open_source.11_check_merge.error')}
       
       ${err}`
     );

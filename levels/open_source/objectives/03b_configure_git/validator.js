@@ -6,7 +6,7 @@ module.exports = async helper => {
   try {
     await commandExists('git');
   } catch (err) {
-    helper.fail(`We did not find command line git installed on your computer!`);
+    helper.fail(helper.world.getTranslatedString('open_source.03b_configure_git.git_not_found'));
     return;
   }
 
@@ -14,12 +14,12 @@ module.exports = async helper => {
     const gitConfigList = await exec('git config --list');
 
     if (!gitConfigList.stdout.includes('user.email=')) {
-      helper.fail(`We did not find the you email configured correctly!`);
+      helper.fail(helper.world.getTranslatedString('open_source.03b_configure_git.email_error'));
       return;
     }
 
     if (!gitConfigList.stdout.includes('user.name=')) {
-      helper.fail(`We did not find the you user name configured correctly!`);
+      helper.fail(helper.world.getTranslatedString('open_source.03b_configure_git.username_not_found'));
       return;
     }
 
@@ -30,12 +30,10 @@ module.exports = async helper => {
     const [, userName] = gitUserNameOption.trim().split('=');
 
     helper.success(
-      `It looks like your email and name are configured correctly!`,
+      helper.world.getTranslatedString('open_source.03b_configure_git.email_not_configured'),
       [{ name: 'LOCAL_GIT_USER_NAME', value: userName }]
     );
   } catch (err) {
-    helper.fail(`Something went wrong while tried to validate your git configuration!
-    
-    ${err}`);
+    helper.fail(helper.world.getTranslatedString('open_source.03b_configure_git.error', { err }));
   }
 };

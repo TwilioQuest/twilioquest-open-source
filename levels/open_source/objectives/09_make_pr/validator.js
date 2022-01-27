@@ -13,9 +13,7 @@ module.exports = async helper => {
     );
 
     if (response.statusCode !== 200) {
-      helper.fail(
-        `We could not find the Pull Request #${prNumber} on the Open Pixel Art remote repository"!`
-      );
+      helper.fail(helper.world.getTranslatedString('open_source.09_make_pr.pr_not_found', { prNumber }));
       return;
     }
 
@@ -24,21 +22,15 @@ module.exports = async helper => {
     const prOwner = parsedResponseBody.user.login;
 
     if (prOwner !== TQ_GITHUB_USERNAME) {
-      helper.fail(
-        `We found the Pull Request #${prNumber} on the Open Pixel Art remote repository, but it doesn't belong to your GitHub user "${TQ_GITHUB_USERNAME}"!`
-      );
+      helper.fail(helper.world.getTranslatedString('open_source.09_make_pr.pr_found_wrong_user', { prNumber, TQ_GITHUB_USERNAME }));
       return;
     }
 
     return helper.success(
-      `We found your Pull Request #${prNumber} on the Open Pixel Art remote repository for your GitHub user "${TQ_GITHUB_USERNAME}"!`,
+      helper.world.getTranslatedString('open_source.09_make_pr.success', { prNumber, TQ_GITHUB_USERNAME }),
       [{ name: 'OPEN_PIXEL_ART_PR_NUMBER', value: prNumber }]
     );
   } catch (err) {
-    helper.fail(
-      `Something went wrong when we tried to validate your Open Pixel Art pull request!
-      
-      ${err}`
-    );
+    helper.fail(helper.world.getTranslatedString('open_source.09_make_pr.error', { err }));
   }
 };

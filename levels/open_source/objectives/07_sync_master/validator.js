@@ -20,9 +20,7 @@ module.exports = async helper => {
     const upstreamRemotes = remotes.filter(([name]) => name === 'upstream');
 
     if (upstreamRemotes.length === 0) {
-      helper.fail(
-        `We didn't find a local remote named "upstream"! Did you create one yet?`
-      );
+      helper.fail(helper.world.getTranslatedString('open_source.07_sync_master.remote_not_found'));
       return;
     }
 
@@ -33,14 +31,7 @@ module.exports = async helper => {
     );
 
     if (!isUpstreamUrlCorrect) {
-      helper.fail(
-        `We found your "upstream" remote, but it doesn't seem to have the correct URL.
-        
-        It should look like this:
-        https://github.com/twilio-labs/open-pixel-art.git
-        
-        Run git remote -v in your terminal to verify it!`
-      );
+      helper.fail(helper.world.getTranslatedString('open_source.07_sync_master.upstream_found'));
       return;
     }
 
@@ -52,9 +43,7 @@ module.exports = async helper => {
     );
 
     if (openPixelArtResponse.statusCode !== 200) {
-      helper.fail(`We couldn't connect to the Open Pixel Art repository!
-      
-      ${openPixelArtResponse.statusMessage}`);
+      helper.fail(helper.world.getTranslatedString('open_source.07_sync_master.repo_not_connected', { statusMessage: openPixelArtResponse.statusMessage }));
       return;
     }
 
@@ -66,9 +55,7 @@ module.exports = async helper => {
     );
 
     if (playerResponse.statusCode !== 200) {
-      helper.fail(`We couldn't find the "open-pixel-art" repository for your user "${TQ_GITHUB_USERNAME}"!
-      
-      ${playerResponse.statusMessage}`);
+      helper.fail(helper.world.getTranslatedString('open_source.07_sync_master.repo_not_found', { TQ_GITHUB_USERNAME, statusMessage: playerResponse.statusMessage }));
       return;
     }
 
@@ -76,20 +63,12 @@ module.exports = async helper => {
       JSON.parse(playerResponse.body).commit.sha !==
       JSON.parse(openPixelArtResponse.body).commit.sha
     ) {
-      helper.fail(
-        `The Open Pixel Art repository and the "open-pixel-art" repository for your user "${TQ_GITHUB_USERNAME} are out of sync"! New changes may've been added since your last sync. Try syncing again!`
-      );
+      helper.fail(helper.world.getTranslatedString('open_source.07_sync_master.open_pixel', { TQ_GITHUB_USERNAME }));
       return;
     }
 
-    return helper.success(
-      `The Open Pixel Art repository and the "open-pixel-art" repository for your user "${TQ_GITHUB_USERNAME} are in sync! These may get out of sync in the future as other users make changes to the repository!`
-    );
+    return helper.success(helper.world.getTranslatedString('open_source.07_sync_master.success', { TQ_GITHUB_USERNAME }));
   } catch (err) {
-    helper.fail(
-      `Something went wrong when we tried to validate if your Open Pixel Art fork was synchronized!
-      
-      ${err}`
-    );
+    helper.fail(helper.world.getTranslatedString('open_source.07_sync_master.error', { err }));
   }
 };

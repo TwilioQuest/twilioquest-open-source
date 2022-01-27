@@ -15,22 +15,12 @@ module.exports = async helper => {
     const commit = gitShowCommit.stdout;
 
     if (!commit.includes(TQ_LOCAL_GIT_USER_NAME)) {
-      helper.fail(`
-        Sorry! The commit hash "${commitHash}" does not have your local git user "${TQ_LOCAL_GIT_USER_NAME}" listed as the author!
-
-        Try the command "git show ${commitHash}" to look at the specific commit you just provided.
-      `);
+      helper.fail(helper.world.getTranslatedString('open_source.06b_commit_hash.local_git_user_error', { commitHash, TQ_LOCAL_GIT_USER_NAME }));
       return;
     }
 
-    return helper.success(
-      `We found your pixel commit for the author "${TQ_LOCAL_GIT_USER_NAME}"!`
-    );
+    return helper.success(helper.world.getTranslatedString('open_source.06b_commit_hash.success', { TQ_LOCAL_GIT_USER_NAME }));
   } catch (err) {
-    helper.fail(
-      `Something went wrong when we tried to validate your pixel commit!
-      
-      ${err}`
-    );
+    helper.fail(helper.world.getTranslatedString('open_source.06b_commit_hash.error', { err }));
   }
 };

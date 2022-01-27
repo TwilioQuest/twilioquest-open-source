@@ -12,19 +12,11 @@ module.exports = async helper => {
     );
 
     if (response.statusCode === 200) {
-      return helper.success(
-        `We found your fork of the Open Pixel Art respository! Good job!`
-      );
+      return helper.success(helper.world.getTranslatedString('open_source.02_fork_project.success'));
     } else {
-      helper.fail(
-        `We couldn't find a repository named "open-pixel-art" owned by the GitHub user, ${TQ_GITHUB_USERNAME}. Is your fork named correctly?`
-      );
+      helper.fail(helper.world.getTranslatedString('open_source.02_fork_project.repository_not_found', { TQ_GITHUB_USERNAME }));
     }
   } catch (err) {
-    helper.fail(
-      `Something went wrong when we tried to validate your Open Pixel Art fork!
-      
-      ${err}`
-    );
+    helper.fail(helper.world.getTranslatedString('open_source.02_fork_project.error', { err }));
   }
 };

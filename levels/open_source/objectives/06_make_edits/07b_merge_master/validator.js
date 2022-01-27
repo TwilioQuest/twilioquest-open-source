@@ -26,20 +26,12 @@ module.exports = async helper => {
     const branchList = gitBranchListContainingMasterCommit.stdout;
 
     if (!branchList.includes(TQ_OPEN_PIXEL_ART_BRANCH)) {
-      helper.fail(
-        `The latest commit on master "${latestMasterCommit}" wasn't found in your branch "${TQ_OPEN_PIXEL_ART_BRANCH}"!`
-      );
+      helper.fail(helper.world.getTranslatedString('open_source.07b_merge_master.latest_commit_not_found', { latestMasterCommit, TQ_OPEN_PIXEL_ART_BRANCH }));
       return;
     }
 
-    return helper.success(
-      `We found the latest commit on master in your branch "${TQ_OPEN_PIXEL_ART_BRANCH}"!`
-    );
+    return helper.success(helper.world.getTranslatedString('open_source.07b_merge_master.latest_commit_found', { TQ_OPEN_PIXEL_ART_BRANCH }));
   } catch (err) {
-    helper.fail(
-      `Something went wrong when we tried to validate if your branch had master merged in!
-      
-      ${err}`
-    );
+    helper.fail(helper.world.getTranslatedString('open_source.07b_merge_master.error', { err }));
   }
 };

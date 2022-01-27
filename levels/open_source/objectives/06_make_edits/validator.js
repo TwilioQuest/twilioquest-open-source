@@ -16,9 +16,7 @@ module.exports = async helper => {
     const pixelFileExists = await jetpack.existsAsync(pixelsPath);
 
     if (pixelFileExists !== 'file') {
-      helper.fail(
-        `We could not find the pixels.json file in your provided repository! Has it been removed? -> ${pixelsPath}`
-      );
+      helper.fail(helper.world.getTranslatedString('open_source.06_make_edits.pixels_not_found', { pixelsPath }));
       return;
     }
 
@@ -28,9 +26,7 @@ module.exports = async helper => {
     );
 
     if (!isPixelPresentWithUsername) {
-      helper.fail(
-        `We didn't find a pixel in the _data/pixels.json file with your git username, ${TQ_GITHUB_USERNAME}!`
-      );
+      helper.fail(helper.world.getTranslatedString('open_source.06_make_edits.pixel_not_found_on_git', { TQ_GITHUB_USERNAME }));
       return;
     }
 
@@ -59,20 +55,12 @@ module.exports = async helper => {
     // }
 
     if (!gitPixelsCommitLog.stdout.includes(TQ_LOCAL_GIT_USER_NAME)) {
-      helper.fail(
-        `We didn't find a commit with your git username, ${TQ_LOCAL_GIT_USER_NAME}, on it for the "_data/pixels.json" file! Have you committed your changes?`
-      );
+      helper.fail(helper.world.getTranslatedString('open_source.06_make_edits.commit_not_found', { TQ_LOCAL_GIT_USER_NAME }));
       return;
     }
 
-    helper.success(
-      `It looks like you've correctly added and committed your new pixel!`
-    );
+    helper.success(helper.world.getTranslatedString('open_source.06_make_edits.success'));
   } catch (err) {
-    helper.fail(
-      `We ran into a problem trying to validate you added your new pixel!
-      
-      ${JSON.stringify(err, undefined, 2)}`
-    );
+    helper.fail(helper.world.getTranslatedString('open_source.06_make_edits.error', { err: JSON.stringify(err, undefined, 2) }));
   }
 };

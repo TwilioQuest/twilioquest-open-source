@@ -5,7 +5,7 @@ module.exports = async helper => {
   const { repositoryFilePath } = helper.validationFields;
 
   if (!repositoryFilePath) {
-    helper.fail(`Don't forget to provide a repository file path!`);
+    helper.fail(helper.world.getTranslatedString('open_source.04_git_clone.dont_forget_path'));
     return;
   }
 
@@ -13,9 +13,7 @@ module.exports = async helper => {
     const directoryExists = await jetpack.existsAsync(repositoryFilePath);
 
     if (directoryExists !== 'dir') {
-      helper.fail(
-        `We could not find a directory at the path you provided! -> ${repositoryFilePath}`
-      );
+      helper.fail(helper.world.getTranslatedString('open_source.04_git_clone.path_not_found', { repositoryFilePath }));
       return;
     }
 
@@ -23,28 +21,22 @@ module.exports = async helper => {
     const packageFileExists = await jetpack.existsAsync(packagePath);
 
     if (packageFileExists !== 'file') {
-      helper.fail(
-        `We could not find the package file in your provided repository! Was it cloned correctly? -> ${packagePath}`
-      );
+      helper.fail(helper.world.getTranslatedString('open_source.04_git_clone.package_not_found', { packagePath }));
       return;
     }
 
     const packageContents = await jetpack.readAsync(packagePath, 'json');
 
     if (packageContents.name !== 'open-pixel-art') {
-      helper.fail(
-        `The package file in that repository was not for the correct project! Was it cloned correctly? -> ${packagePath}`
-      );
+      helper.fail(helper.world.getTranslatedString('open_source.04_git_clone.package_not_correct', { packagePath }));
       return;
     }
 
     helper.success(
-      `It looks like you've cloned the Open Pixel Art repository correctly!`,
+      helper.world.getTranslatedString('open_source.04_git_clone.success'),
       [{ name: 'OPEN_PIXEL_ART_DIR', value: repositoryFilePath }]
     );
   } catch (err) {
-    helper.fail(`Something went wrong while we were trying to validate your repository clone!
-    
-    ${err}`);
+    helper.fail(helper.world.getTranslatedString('open_source.04_git_clone.error', { err }));
   }
 };

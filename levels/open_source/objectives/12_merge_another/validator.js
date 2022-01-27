@@ -5,28 +5,22 @@ module.exports = async helper => {
   const { TQ_GITHUB_USERNAME } = helper.env;
 
   if (!repository) {
-    helper.fail(
-      `Don't forget to enter the name of the repository owner who's project you contributed to!`
-    );
+    helper.fail(helper.world.getTranslatedString('open_source.12_merge_another.dont_forget_owner'));
     return;
   }
 
   if (!repository) {
-    helper.fail(
-      `Don't forget to enter the name of the repository you contributed to!`
-    );
+    helper.fail(helper.world.getTranslatedString('open_source.12_merge_another.dont_forget_name'));
     return;
   }
 
   if (!prNumber) {
-    helper.fail(
-      `Don't forget to enter the number of the Pull Request you contributed with!`
-    );
+    helper.fail(helper.world.getTranslatedString('open_source.12_merge_another.dont_forget_number'));
     return;
   }
 
   if (repositoryOwner === 'twilio-labs' && repository === 'open-pixel-art') {
-    helper.fail(`You can't count your Open Pixel Art contribution again!`);
+    helper.fail(helper.world.getTranslatedString('open_source.12_merge_another.pixel_fail'));
     return;
   }
 
@@ -39,9 +33,7 @@ module.exports = async helper => {
     );
 
     if (response.statusCode !== 200) {
-      helper.fail(
-        `We could not find the Pull Request #${prNumber} on ${repositoryOwner}'s repository "${repository}"!`
-      );
+      helper.fail(helper.world.getTranslatedString('open_source.12_merge_another.pr_not_found', { prNumber, repositoryOwner, repository }));
       return;
     }
 
@@ -51,34 +43,22 @@ module.exports = async helper => {
     const prOwner = parsedResponseBody.user.login;
 
     if (prOwner !== TQ_GITHUB_USERNAME) {
-      helper.fail(
-        `We found the Pull Request #${prNumber} on ${repositoryOwner}'s repository "${repository}", but it doesn't belong to your GitHub user "${TQ_GITHUB_USERNAME}"!`
-      );
+      helper.fail(helper.world.getTranslatedString('open_source.12_merge_another.pr_dont_belong', { prNumber, repositoryOwner, repository, TQ_GITHUB_USERNAME }));
       return;
     }
 
     if (isPrClosed && !isPrMerged) {
-      helper.fail(
-        `We found the Pull Request #${prNumber} on ${repositoryOwner}'s repository "${repository}", but it was closed without being merged!`
-      );
+      helper.fail(helper.world.getTranslatedString('open_source.12_merge_another.pr_closed', { prNumber, repositoryOwner, repository }));
       return;
     }
 
     if (!isPrMerged) {
-      helper.fail(
-        `We found the Pull Request #${prNumber} on ${repositoryOwner}'s repository "${repository}", but it has not been merged yet!`
-      );
+      helper.fail(helper.world.getTranslatedString('open_source.12_merge_another.pr_not_merged', { prNumber, repositoryOwner, repository }));
       return;
     }
 
-    return helper.success(
-      `We found the Pull Request #${prNumber} on ${repositoryOwner}'s repository "${repository}" and it has been merged! Congratulations on your open source contribution!`
-    );
+    return helper.success(helper.world.getTranslatedString('open_source.12_merge_another.success', { prNumber, repositoryOwner, repository }));
   } catch (err) {
-    helper.fail(
-      `Something went wrong when we tried to validate if your pull request was merged!
-      
-      ${err}`
-    );
+    helper.fail(helper.world.getTranslatedString('open_source.12_merge_another.error', { err }));
   }
 };

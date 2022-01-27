@@ -17,9 +17,7 @@ async function updateBrushState(event, world, worldState) {
   if (event.name === "playerDidInteract" && event.target.type === "brush") {
     // TODO: Temp disable for testing
     if (!worldState.flameUnlocked) {
-      world.showNotification(
-        `Hopefully the <em>The Flame of Open Source</em> can help me burn through this brush.`
-      );
+      world.showNotification(world.getTranslatedString('open_source.events.brush.open_source_flame'));
       return;
     }
 
