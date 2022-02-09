@@ -1,0 +1,17 @@
+{
+  "title": "Contribuer à l'open source: Créer une branche",
+  "description": "Créez une <strong>branche</strong> dans votre répertoire Git local pour contenir les modifications que vous allez apporter au projet.",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "branchName",
+      "type": "text",
+      "placeholder": "dev-branch",
+      "label": "Saisissez le nom de la branche que vous créez ici!"
+    }
+  ],
+  "rewards": {
+    "xp": 200,
+    "items": []
+  }
+}

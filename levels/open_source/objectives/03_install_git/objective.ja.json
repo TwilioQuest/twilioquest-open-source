@@ -1,0 +1,17 @@
+{
+  "title": "オープンソースへの貢献: gitのインストール",
+  "description": "自分のコンピューターでgitリポジトリを使用し作業できるように、<strong>gitコマンドラインツール</strong>をインストールします。",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "prompt",
+      "type": "prompt",
+      "placeholder": "",
+      "label": "コンピューターに\"git\"がローカルでインストールされていることを確認し、[HACK]をクリックします。"
+    }
+  ],
+  "rewards": {
+    "xp": 200,
+    "items": []
+  }
+}

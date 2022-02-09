@@ -1,0 +1,17 @@
+{
+  "title": "Contribuer à l'open source: Commit hash",
+  "description": "Vous avez trouvé un coffre secret! Découvrez comment trouver le commit hash de vos modifications pour l'ouvrir.",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "commitHash",
+      "type": "text",
+      "placeholder": "XXXXXXXXXXXXXXXXXX",
+      "label": "Saisissez le commit hash de votre nouveau pixel ici!"
+    }
+  ],
+  "rewards": {
+    "xp": 200,
+    "items": []
+  }
+}

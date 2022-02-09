@@ -1,0 +1,17 @@
+{
+  "title": "Contribuer à l'open source: Installer Git",
+  "description": "Installez les <strong>outils de ligne de commande Git</strong> pour pouvoir travailler avec les répertoires Git sur votre ordinateur.",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "prompt",
+      "type": "prompt",
+      "placeholder": "",
+      "label": "Une fois que vous avez vérifié que «Git» est installé localement sur votre ordinateur, cliquez sur HACK."
+    }
+  ],
+  "rewards": {
+    "xp": 200,
+    "items": []
+  }
+}

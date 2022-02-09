@@ -1,0 +1,17 @@
+{
+  "title": "オープンソースへの貢献: コミットハッシュ",
+  "description": "秘密の箱を見つけました!自分の変更のコミットハッシュを取得する方法を学んで、箱を開けましょう。",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "commitHash",
+      "type": "text",
+      "placeholder": "XXXXXXXXXXXXXXXXXX",
+      "label": "新しいピクセルコミットのコミットハッシュをここに入力します。"
+    }
+  ],
+  "rewards": {
+    "xp": 200,
+    "items": []
+  }
+}

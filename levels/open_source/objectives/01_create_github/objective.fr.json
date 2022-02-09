@@ -1,0 +1,19 @@
+{
+  "title": "Contribuer à l'open source: Rejoindre GitHub",
+  "description": "<strong>Créez un compte GitHub</strong> pour contribuer aux projets open source qui utilisent GitHub et héberger leur code source.",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "username",
+      "type": "text",
+      "placeholder": "e.g. samantha_smith99",
+      "label": "Saisissez votre nom d'utilisateur GitHub ici."
+    }
+  ],
+  "rewards": {
+    "xp": 100,
+    "items": [
+      "octocat_ears"
+    ]
+  }
+}

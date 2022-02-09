@@ -1,0 +1,17 @@
+{
+  "title": "Contribuer à l'open source: Configurer le Git",
+  "description": "Configurez <strong>un nom d'utilisateur et une adresse e-mail</strong> à associer à vos contributions dans un répertoire.",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "prompt",
+      "type": "prompt",
+      "placeholder": "",
+      "label": "Cliquez sur HACK une fois que vous avez configuré Git avec votre nom d'utilisateur et votre adresse e-mail!"
+    }
+  ],
+  "rewards": {
+    "xp": 100,
+    "items": []
+  }
+}

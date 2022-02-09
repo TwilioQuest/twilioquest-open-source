@@ -1,0 +1,17 @@
+{
+  "title": "Contribuer à l'open source: Créer une fork à partir d'un répertoire",
+  "description": "Apprenez à <strong>créer une fork</strong> à partir d'un projet open source, afin de pouvoir travailler sur vos propres modifications et contributions.",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "prompt",
+      "type": "prompt",
+      "placeholder": "",
+      "label": "Une fois que vous avez créé votre fork «open-pixel-art», cliquez sur HACK!"
+    }
+  ],
+  "rewards": {
+    "xp": 100,
+    "items": []
+  }
+}

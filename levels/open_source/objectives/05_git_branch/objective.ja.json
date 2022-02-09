@@ -1,0 +1,17 @@
+{
+  "title": "オープンソースへの貢献: ブランチの作成",
+  "description": "ローカルgitリポジトリに<strong>ブランチ</strong>を作成し、プロジェクトに加える変更を含めます。",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "branchName",
+      "type": "text",
+      "placeholder": "dev-branch",
+      "label": "ここに作成するブランチ名を入力してください。"
+    }
+  ],
+  "rewards": {
+    "xp": 200,
+    "items": []
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Contribuer à l'open source: Synchroniser votre fork",
+  "description": "Vous avez apporté votre modification! Assurez-vous que vous avez toutes les dernières modifications.",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "prompt",
+      "type": "prompt",
+      "placeholder": "",
+      "label": "Une fois que vous avez synchronisé vos répertoires, cliquez sur HACK!"
+    }
+  ],
+  "rewards": {
+    "xp": 0,
+    "items": []
+  }
+}
