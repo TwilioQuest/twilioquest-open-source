@@ -91,5 +91,8 @@ module.exports = {
   "open_source.12_merge_another.pr_not_merged": "Encontramos a pull request #{prNumber} no repositório '{repository}'do {repositoryOwner}, mas ela ainda não foi mesclada!",
   "open_source.12_merge_another.success": "Encontramos a pull request #{prNumber} no repositório '{repository}' do {repositoryOwner}e ela foi mesclada! Parabéns pela sua contribuição ao open source!",
   "open_source.12_merge_another.error": `Algo deu errado quando tentamos validar se sua pull request foi mesclada! 
-  {err}`
+  {err}`,
+  "open_source.events.speak_village_leader": "Acho que preciso falar com o líder da vila antes de poder prosseguir para a floresta.",
+  "open_source.events.down_the_forest": "Parece que o caminho para a floresta está limpo. Agora, para encontrar <em>The Flame of Open Source (Chama do código aberto)...",
+  "open_source.events.brush.cant_get_through": "Humm. Não consigo passar por esse arbusto mesmo com <em>The Flame of Open Source (Chama do código aberto)</em>. Preciso prosseguir para a floresta e voltar mais tarde."
 }

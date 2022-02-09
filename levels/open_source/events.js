@@ -48,8 +48,7 @@ module.exports = async function (event, world) {
         });
 
         world.showNotification(`
-          <i>I think I need to speak to the village leader before I can move
-          further into the forest.</i>
+          <i>${world.getTranslatedString('open_source.events.speak_village_leader')}</i>
         `);
 
         await world.wait(3000);
@@ -93,8 +92,7 @@ module.exports = async function (event, world) {
         });
 
         world.showNotification(`
-          <i>It would appear the way down into the forest is clear.
-          Now, to find the <em>Flame of Open Source...</em></i>
+          <i>${world.getTranslatedString('open_source.events.down_the_forest')}</i>
         `);
 
         await world.wait(3000);

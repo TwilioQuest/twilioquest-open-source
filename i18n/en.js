@@ -91,5 +91,8 @@ module.exports = {
   "open_source.12_merge_another.pr_not_merged": "We found the Pull Request #{prNumber} on {repositoryOwner}'s repository '{repository}', but it has not been merged yet!",
   "open_source.12_merge_another.success": "We found the Pull Request #{prNumber} on {repositoryOwner}'s repository '{repository}' and it has been merged! Congratulations on your open source contribution!",
   "open_source.12_merge_another.error": `Something went wrong when we tried to validate if your pull request was merged! 
-  {err}`
+  {err}`,
+  "open_source.events.speak_village_leader": "I think I need to speak to the village leader before I can move further into the forest.",
+  "open_source.events.down_the_forest": "It would appear the way down into the forest is clear. Now, to find the <em>Flame of Open Source...</em>",
+  "open_source.events.brush.cant_get_through": "Hmm. I can't get through this brush even with <em>The Flame of Open Source</em>. I must need to go further into the forest and come back later."
 }

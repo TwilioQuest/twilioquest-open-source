@@ -1,0 +1,33 @@
+{
+  "title": "A floresta do código-fonte aberto",
+  "description": "Os Druidas do open source protegeram este mundo florestal sagrado por gerações, ajudando aqueles que desejam contribuir para projetos de open source. Os relatórios locais dizem que o caminho para The Flame of Open Source, um artefato sagrado, foi interrompido. Investigue o quanto antes!",
+  "questDescription": "Explore a floresta e desbloqueie o caminho para The Flame of Open Source.",
+  "navMap": {
+    "x": 75,
+    "y": 10,
+    "sprite": "nav_map/forest_of_open_source.png"
+  },
+  "priority": 2,
+  "backgroundMusic": "fascinatingarea_108253b",
+  "backgroundEffect": {
+    "key": "starfield",
+    "options": {
+      "baseSpeed": 0.03,
+      "direction": "topToBottom"
+    }
+  },
+  "flavorTextOverrides": {},
+  "objectives": [
+    "01_create_github",
+    "02_fork_project",
+    "03_install_git",
+    "03b_configure_git",
+    "04_git_clone",
+    "05_git_branch",
+    "06_make_edits",
+    "06b_commit_hash",
+    "08_push_upstream",
+    "09_make_pr",
+    "12_merge_another"
+  ]
+}

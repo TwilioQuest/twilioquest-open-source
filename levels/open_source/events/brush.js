@@ -26,9 +26,7 @@ async function updateBrushState(event, world, worldState) {
       !world.isObjectiveCompleted(barrierPrereqMap[event.target.key])
     ) {
       // If some brush key has a prereq, don't unlock the brush
-      world.showNotification(
-        `Hmm. I can't get through this brush even with <em>The Flame of Open Source</em>. I must need to go further into the forest and come back later.`
-      );
+      world.showNotification(world.getTranslatedString('open_source.events.brush.cant_get_through'));
       return;
     }
 
