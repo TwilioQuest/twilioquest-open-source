@@ -94,5 +94,7 @@ module.exports = {
   {err}`,
   "open_source.events.speak_village_leader": "I think I need to speak to the village leader before I can move further into the forest.",
   "open_source.events.down_the_forest": "It would appear the way down into the forest is clear. Now, to find the <em>Flame of Open Source...</em>",
-  "open_source.events.brush.cant_get_through": "Hmm. I can't get through this brush even with <em>The Flame of Open Source</em>. I must need to go further into the forest and come back later."
+  "open_source.events.brush.cant_get_through": "Hmm. I can't get through this brush even with <em>The Flame of Open Source</em>. I must need to go further into the forest and come back later.",
+  "open-source.events.notification": "I\'ve completed everything in the <span class='highlight'>Forest of Open Source</span> for now!",
+  "open-source.events.log": "I've completed everything in the Forest of Open Source for now!"
 }

@@ -94,5 +94,7 @@ module.exports = {
   {err}`,
   "open_source.events.speak_village_leader": "Acho que preciso falar com o líder da vila antes de poder prosseguir para a floresta.",
   "open_source.events.down_the_forest": "Parece que o caminho para a floresta está limpo. Agora, para encontrar <em>The Flame of Open Source (Chama do código aberto)...",
-  "open_source.events.brush.cant_get_through": "Humm. Não consigo passar por esse arbusto mesmo com <em>The Flame of Open Source (Chama do código aberto)</em>. Preciso prosseguir para a floresta e voltar mais tarde."
+  "open_source.events.brush.cant_get_through": "Humm. Não consigo passar por esse arbusto mesmo com <em>The Flame of Open Source (Chama do código aberto)</em>. Preciso prosseguir para a floresta e voltar mais tarde.",
+  "open-source.events.notification": "Já concluí tudo na <span class='highlight'>Floresta do código-fonte aberto</span> por enquanto!",
+  "open-source.events.log": "Já concluí tudo na Floresta do código-fonte aberto por enquanto!"
 }

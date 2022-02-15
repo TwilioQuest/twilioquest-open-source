@@ -114,9 +114,8 @@ module.exports = async function (event, world) {
   await updateBrushState(event, world, worldState);
 
   updateQuestLogWhenComplete({
-    notification:
-      'I\'ve completed everything in the <span class="highlight">Forest of Open Source</span> for now!',
-    log: "I've completed everything in the Forest of Open Source for now!",
+    notification: world.getTranslatedString('open-source.events.notification'),
+    log: world.getTranslatedString('open-source.events.log'),
     event,
     world,
     worldStateKey: WORLD_STATE_KEY,
