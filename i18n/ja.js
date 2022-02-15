@@ -97,5 +97,7 @@ module.exports = {
   {err}`,
   "open_source.events.speak_village_leader": "森の奥へとさらに進む前に、村のリーダーに話しかける必要があると思う。",
   "open_source.events.down_the_forest": "そうすれば森に分け入る道がはっきりするだろう。今、<em>「オープンソースの炎」を見つけるには...",
-  "open_source.events.brush.cant_get_through": "ふむ。「<em>オープンソースの炎</em>」をもってしてもこの茂みは通り抜けられない。森にさらに分け入り、しばらくしてから戻る必要があります。"
+  "open_source.events.brush.cant_get_through": "ふむ。「<em>オープンソースの炎</em>」をもってしてもこの茂みは通り抜けられない。森にさらに分け入り、しばらくしてから戻る必要があります。",
+  "open-source.events.notification": "<span class='highlight'>オープンソースの森</span>でできることはすべて完了できた!",
+  "open-source.events.log": "オープンソースの森でできることはすべて完了できた!"
 }

@@ -28,4 +28,4 @@ GitHubで、マージの競合が発生したため、コードを自動的に�
 
 ## ハックしましょう！
 
-あなたのプルリクエスト\[your Pull Request](https://github.com/twilio-labs/open-pixel-art/pull/\<%= env.TQ_OPEN_PIXEL_ART_PR_NUMBER.value %>)が正常にマージされた後、［`HACK`］をクリックし、TwilioQuestで確認してください。
+あなたのプルリクエスト\[your Pull Request](https://github.com/twilio-labs/open-pixel-art/pull/\<%= env.TQ_OPEN_PIXEL_ART_PR_NUMBER.value %>)が正常にマージされた後、[`HACK`]をクリックし、TwilioQuestで確認してください。

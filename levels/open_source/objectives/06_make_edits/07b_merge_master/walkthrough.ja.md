@@ -83,4 +83,4 @@ git commit
 Merge branch 'master' into <%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>
 ```
 
-マスターをブランチ`<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>`にマージしたら、右にある［`HACK`］を押します。
+マスターをブランチ`<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>`にマージしたら、右にある[`HACK`]を押します。

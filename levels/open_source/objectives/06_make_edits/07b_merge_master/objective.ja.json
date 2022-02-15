@@ -1,0 +1,17 @@
+{
+  "title": "オープンソースへの貢献: マージする",
+  "description": "マスターブランチを同期したところで、それらの変更を新しいブランチにマージしましょう。",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "prompt",
+      "type": "prompt",
+      "placeholder": "",
+      "label": "マージを使用して新しいブランチを更新し、[HACK]をクリックします。"
+    }
+  ],
+  "rewards": {
+    "xp": 0,
+    "items": []
+  }
+}

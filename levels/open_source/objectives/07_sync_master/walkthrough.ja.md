@@ -104,4 +104,4 @@ git push
 
 \[https://github.com/\<%= env.TQ_GITHUB_USERNAME.value %>/open-pixel-art/commits/master](https://github.com/\<%= env.TQ_GITHUB_USERNAME.value %>/open-pixel-art/commits/master)
 
-リポジトリのマスターブランチを同期し、右にある［`HACK`］を押します。
+リポジトリのマスターブランチを同期し、右にある[`HACK`]を押します。

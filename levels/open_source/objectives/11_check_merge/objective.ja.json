@@ -1,0 +1,18 @@
+{
+  "title": "オープンソースへの貢献: マージする",
+  "description": "このプロセスの最後のステップは、プルリクエストをマージすることです。その仕組みを見てみましょう。",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "prompt",
+      "type": "prompt",
+      "placeholder": "",
+      "label": "\"open-pixel-art\"プルリクエストがマージされた後、[HACK]をクリックします。"
+    }
+  ],
+  "rewards": {
+    "xp": 250,
+    "items": []
+  },
+  "hidden": true
+}

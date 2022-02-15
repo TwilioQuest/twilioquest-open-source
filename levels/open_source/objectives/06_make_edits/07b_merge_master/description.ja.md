@@ -2,4 +2,4 @@
 
 私たちのローカルマスターブランチがリポジトリと同期されたので、それらの変更を私たちのピクセルブランチ`<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>`にマージする方法を学びます。
 
-ローカルマスターブランチをブランチ`<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>`にマージしてから、［`HACK`］をクリックします。
+ローカルマスターブランチをブランチ`<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>`にマージしてから、[`HACK`]をクリックします。

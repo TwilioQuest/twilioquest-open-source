@@ -6,4 +6,4 @@
 https://github.com/twilio-labs/open-pixel-art/pull/<PULL_REQUEST_NUMBER>
 ```
 
-[こちらですべてのオープンなプルリクエストをご覧](https://github.com/pulls)いただけます。右側のテキストフィールドにプルリクエストの番号を入力し、［*HACK*］をクリックします。
+[こちらですべてのオープンなプルリクエストをご覧](https://github.com/pulls)いただけます。右側のテキストフィールドにプルリクエストの番号を入力し、[*HACK*]をクリックします。

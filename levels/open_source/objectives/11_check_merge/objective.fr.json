@@ -1,0 +1,18 @@
+{
+  "title": "Contribuer à l'open source: Fusion!",
+  "description": "La dernière étape de votre parcours consiste à fusionner votre pull request. Voyons comment cela fonctionne.",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "prompt",
+      "type": "prompt",
+      "placeholder": "",
+      "label": "Cliquez sur HACK après avoir fusionné votre pull request «open-pixel-art»!"
+    }
+  ],
+  "rewards": {
+    "xp": 250,
+    "items": []
+  },
+  "hidden": true
+}
