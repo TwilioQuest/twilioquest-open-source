@@ -12,11 +12,11 @@ O GitHub mantém [documentação sobre como usar a interface do usuário para ab
 
 Queremos ter certeza de que estamos abrindo uma pull request no branch `master` do projeto `open-pixel-art`. Isso significa que temos certeza de que ele está definido como a base de nossa pull request.
 
-O repositório que foi feito o fork deve ser definido como o repositório principal. O branch criado, \<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>, deve ser definido como branch de comparação.
+O repositório que foi feito o fork deve ser definido como o repositório principal. O branch criado, <%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>, deve ser definido como branch de comparação.
 
 Este URL deve levá-lo diretamente para a tela de criação da pull request do GitHub com os branches `base` e `compare` já configurados:
 
-\[https://github.com/twilio-labs/open-pixel-art/compare/master...\<%= env.TQ_GITHUB_USERNAME.value %>:\<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>](https://github.com/twilio-labs/open-pixel-art/compare/master...\<%= env.TQ_GITHUB_USERNAME.value %>:\<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>)
+[https://github.com/twilio-labs/open-pixel-art/compare/master...<%= env.TQ_GITHUB_USERNAME.value %>:<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>](https://github.com/twilio-labs/open-pixel-art/compare/master...<%= env.TQ_GITHUB_USERNAME.value %>:<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>)
 
 ## Criar pull request
 

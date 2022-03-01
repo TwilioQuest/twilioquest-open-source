@@ -67,7 +67,7 @@ Confira no repositório do GitHub para ter certeza de que o branch está lá ago
 
 O url do novo branch deve ser semelhante ao seguinte:
 
-\[https://github.com/\<%= env.TQ_GITHUB_USERNAME.value %>/open-pixel-art/tree/\<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>](https://github.com/\<%= env.TQ_GITHUB_USERNAME.value %>/open-pixel-art/tree/\<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>)
+[https://github.com/<%= env.TQ_GITHUB_USERNAME.value %>/open-pixel-art/tree/<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>](https://github.com/<%= env.TQ_GITHUB_USERNAME.value %>/open-pixel-art/tree/<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>)
 
 Você também pode navegar para essa visualização usando a IU do GitHub, não há necessidade de memorizar URLs.
 

@@ -30,7 +30,7 @@ Por exemplo, com o projeto Open Pixel Art que teria sido:
 
 - twilio-labs
 - open-pixel-art
-- \<%= env.TQ_OPEN_PIXEL_ART_PR_NUMBER.value %>
+- <%= env.TQ_OPEN_PIXEL_ART_PR_NUMBER.value %>
 
 ## Hack!
 

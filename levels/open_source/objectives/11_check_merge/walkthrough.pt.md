@@ -24,8 +24,8 @@ Ao colaborar com os mantenedores de um projeto, você precisa dar a eles tempo p
 
 Você receberá notificações do GitHub [baseadas nas configurações](https://help.github.com/en/articles/about-notifications) que podem informar quando seu código finalizar o merge.
 
-Como nossas ferramentas revisam automaticamente \[sua pull request](https://github.com/twilio-labs/open-pixel-art/pull/\<%= env.TQ_OPEN_PIXEL_ART_PR_NUMBER.value %>), você deve conseguir voltar a esta pull request em alguns minutos para uma uma pull request já com o merge!
+Como nossas ferramentas revisam automaticamente [sua pull request](https://github.com/twilio-labs/open-pixel-art/pull/<%= env.TQ_OPEN_PIXEL_ART_PR_NUMBER.value %>), você deve conseguir voltar a esta pull request em alguns minutos para uma uma pull request já com o merge!
 
 ## Hack!
 
-Depois que \[sua pull request](https://github.com/twilio-labs/open-pixel-art/pull/\<%= env.TQ_OPEN_PIXEL_ART_PR_NUMBER.value %>) tiver o merge com sucesso, clique em `HACK` para que o TwilioQuest possa confirmar para você!
+Depois que [sua pull request](https://github.com/twilio-labs/open-pixel-art/pull/<%= env.TQ_OPEN_PIXEL_ART_PR_NUMBER.value %>) tiver o merge com sucesso, clique em `HACK` para que o TwilioQuest possa confirmar para você!

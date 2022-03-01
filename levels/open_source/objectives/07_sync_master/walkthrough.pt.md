@@ -68,7 +68,7 @@ Não há funcionalidade no GitHub para sincronizar dois repositórios remotos di
 
 Isso terminará com todos os três repositórios sincronizados.
 
-**1\.** Primeiro, precisamos mudar para o branch master:
+**1.** Primeiro, precisamos mudar para o branch master:
 
 ```bash
 git checkout master
@@ -78,13 +78,13 @@ Mudar para o branch master coloca o código de volta ao estado em que estava qua
 
 Não se preocupe! Se você voltar ao branch `<%= env.TQ_OPEN_PIXEL_ART_BRANCH.value %>`, as alterações ainda estarão sãs e salvas.
 
-**2\.** Agora, usamos o comando `git pull` para obter o código do repositório `upstream` configurado recentemente. Precisamos especificar o branch `master` do qual extrair também.
+**2.** Agora, usamos o comando `git pull` para obter o código do repositório `upstream` configurado recentemente. Precisamos especificar o branch `master` do qual extrair também.
 
 ```bash
 git pull upstream master
 ```
 
-**3\.** Depois de executar o comando extrair, você verá uma mensagem detalhando todas as diferenças de código entre seu local `master` e o `open-pixel-art` `master`. Pode ser uma tonelada de arquivos ou você pode receber uma mensagem de que já está atualizado!
+**3.** Depois de executar o comando extrair, você verá uma mensagem detalhando todas as diferenças de código entre seu local `master` e o `open-pixel-art` `master`. Pode ser uma tonelada de arquivos ou você pode receber uma mensagem de que já está atualizado!
 
 Se você fez alterações, precisa colocá-las de volta no fork. Você pode fazer isso executando o comando push (enviar) do git.
 
@@ -102,6 +102,6 @@ Há uma chance de que novas confirmações sejam exibidas desde que você fez a 
 
 [https://github.com/twilio-labs/open-pixel-art/commits/master](https://github.com/twilio-labs/open-pixel-art/commits/master)
 
-\[https://github.com/\<%= env.TQ_GITHUB_USERNAME.value %>/open-pixel-art/commits/master](https://github.com/\<%= env.TQ_GITHUB_USERNAME.value %>/open-pixel-art/commits/master)
+[https://github.com/<%= env.TQ_GITHUB_USERNAME.value %>/open-pixel-art/commits/master](https://github.com/<%= env.TQ_GITHUB_USERNAME.value %>/open-pixel-art/commits/master)
 
 Depois de sincronizar os branches master dos três repositórios, vá em frente e pressione `HACK` à direita!
