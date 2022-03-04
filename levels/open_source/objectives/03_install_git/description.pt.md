@@ -6,4 +6,4 @@ Para concluir esse desafio, você deve [instalar as ferramentas de linha de coma
 git --version
 ```
 
-Depois de verificar se o `git` está instalado e disponível no [caminho do sistema](https://en.wikipedia.org/wiki/PATH_(variable)), clique no botão *HACK* (HACKEAR).
+Depois de verificar se o `git` está instalado e disponível no [caminho do sistema](https://en.wikipedia.org/wiki/PATH_(variable)), clique no botão *HACK*.

@@ -126,6 +126,6 @@ A parte `feat(pixels):` antes da mensagem ser adicionada para que o projeto Open
 git commit -m "feat(pixels): add my new pixel"
 ```
 
-## Hackear!
+## Hack!
 
 Este objetivo tinha muitas etapas! Mas agora você tem um pixel novo e pronto para compartilhá-lo com o mundo. Pressione `HACK` para confirmar que o pixel foi alterado e comitado corretamente.

@@ -18,7 +18,7 @@ Essa missão exigirá e percorrerá o uso da linha de comando `git`. O site do g
 
 Se a versão da linha de comando não funcionar com você, experimente o GitHub Desktop depois desta missão!
 
-## Hackear!
+## Hack!
 
 Siga as [instruções oficiais de instalação do git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). Depois de fazer isso, execute o seguinte comando no seu terminal para garantir que o `git` esteja instalado corretamente.
 

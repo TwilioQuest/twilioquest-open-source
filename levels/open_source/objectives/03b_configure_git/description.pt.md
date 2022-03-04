@@ -5,4 +5,4 @@ O git permite definir algumas [configurações globais](https://git-scm.com/book
 * `user.name`: seu nome como será exibido nas mensagens de confirmação
 * `user.email`: seu e-mail de contato
 
-Depois de configurar essas opções usando o comando `git config`, clique em *HACK* (HACKEAR).
+Depois de configurar essas opções usando o comando `git config`, clique em *HACK*.

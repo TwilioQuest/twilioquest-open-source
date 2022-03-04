@@ -40,6 +40,6 @@ https://github.com/twilio-labs/open-pixel-art/pull/<PULL_REQUEST_NUMBER>
 
 Se você perdeu a pull resquest, pode encontrar [todas as pull resquest que abriu no GitHub](https://github.com/pulls).
 
-## Clique em HACK (HACKEAR)!
+## Clique em HACK!
 
 Digite o número de sua pull request na entrada à direita e clique em `HACK` para concluir este desafio!

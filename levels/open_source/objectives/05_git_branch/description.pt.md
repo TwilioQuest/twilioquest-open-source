@@ -7,4 +7,4 @@ git branch my_branch_name
 git checkout my_branch_name
 ```
 
-Depois de criar um branch, cole o nome do novo branch no campo de texto à direita e clique em *HACK* (HACKEAR).
+Depois de criar um branch, cole o nome do novo branch no campo de texto à direita e clique em *HACK*.

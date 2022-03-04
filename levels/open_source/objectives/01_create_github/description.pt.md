@@ -4,4 +4,4 @@ Muitos projetos de open source (e muitas empresas de software) usam o [git](http
 
 Os desafios a seguir levarão você a contribuir para um projeto de open source hospedado no GitHub. A primeira etapa dessa jornada é [criar uma conta gratuita no GitHub](https://github.com/join).
 
-Depois de criar sua conta gratuita no GitHub, __insira o nome de usuário escolhido__ no campo à direita e pressione *HACK* (HACKEAR).
+Depois de criar sua conta gratuita no GitHub, __insira o nome de usuário escolhido__ no campo à direita e pressione *HACK*.

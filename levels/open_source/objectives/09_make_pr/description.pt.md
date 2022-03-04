@@ -6,4 +6,4 @@ A próxima etapa de sua jornada é enviar sua alteração ao projeto criando uma
 https://github.com/twilio-labs/open-pixel-art/pull/<PULL_REQUEST_NUMBER>
 ```
 
-Você pode [ver todas as pull requests abertas aqui](https://github.com/pulls). Insira o número da pull request no campo de texto à direita e clique em *HACK* (HACKEAR).
+Você pode [ver todas as pull requests abertas aqui](https://github.com/pulls). Insira o número da pull request no campo de texto à direita e clique em *HACK*.
