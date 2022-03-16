@@ -1,6 +1,6 @@
-const got = require('got');
+const got = require("got");
 
-module.exports = async helper => {
+module.exports = async (helper) => {
   const { prNumber, repositoryOwner, repository } = helper.validationFields;
   const { TQ_GITHUB_USERNAME } = helper.env;
 
@@ -25,7 +25,7 @@ module.exports = async helper => {
     return;
   }
 
-  if (repositoryOwner === 'twilio-labs' && repository === 'open-pixel-art') {
+  if (repositoryOwner === "twilio-labs" && repository === "open-pixel-art") {
     helper.fail(`You can't count your Open Pixel Art contribution again!`);
     return;
   }
@@ -46,11 +46,11 @@ module.exports = async helper => {
     }
 
     const parsedResponseBody = JSON.parse(response.body);
-    const isPrClosed = parsedResponseBody.state === 'closed';
+    const isPrClosed = parsedResponseBody.state === "closed";
     const isPrMerged = parsedResponseBody.merged === true;
     const prOwner = parsedResponseBody.user.login;
 
-    if (prOwner !== TQ_GITHUB_USERNAME) {
+    if (prOwner.toLowerCase() !== TQ_GITHUB_USERNAME.toLowerCase()) {
       helper.fail(
         `We found the Pull Request #${prNumber} on ${repositoryOwner}'s repository "${repository}", but it doesn't belong to your GitHub user "${TQ_GITHUB_USERNAME}"!`
       );
