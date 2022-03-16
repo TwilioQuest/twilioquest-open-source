@@ -1,30 +1,29 @@
-const commandExists = require('command-exists');
-const util = require('util');
-const exec = util.promisify(require('child_process').exec);
-const jetpack = require('fs-jetpack');
-const path = require('path');
+const commandExists = require("command-exists");
+const util = require("util");
+const exec = util.promisify(require("child_process").exec);
+const jetpack = require("fs-jetpack");
+const path = require("path");
 
-module.exports = async helper => {
-  const {
-    TQ_OPEN_PIXEL_ART_DIR,
-    TQ_LOCAL_GIT_USER_NAME,
-    TQ_GITHUB_USERNAME,
-  } = helper.env;
+module.exports = async (helper) => {
+  const { TQ_OPEN_PIXEL_ART_DIR, TQ_LOCAL_GIT_USER_NAME, TQ_GITHUB_USERNAME } =
+    helper.env;
 
   try {
-    const pixelsPath = path.join(TQ_OPEN_PIXEL_ART_DIR, '_data', 'pixels.json');
+    const pixelsPath = path.join(TQ_OPEN_PIXEL_ART_DIR, "_data", "pixels.json");
     const pixelFileExists = await jetpack.existsAsync(pixelsPath);
 
-    if (pixelFileExists !== 'file') {
+    if (pixelFileExists !== "file") {
       helper.fail(
         `We could not find the pixels.json file in your provided repository! Has it been removed? -> ${pixelsPath}`
       );
       return;
     }
 
-    const pixelsContent = await jetpack.readAsync(pixelsPath, 'json');
+    const pixelsContent = await jetpack.readAsync(pixelsPath, "json");
     const isPixelPresentWithUsername = pixelsContent.data.find(
-      pixel => pixel.username === TQ_GITHUB_USERNAME
+      (pixel) =>
+        pixel.username &&
+        pixel.username.toLowerCase() === TQ_GITHUB_USERNAME.toLowerCase()
     );
 
     if (!isPixelPresentWithUsername) {
@@ -34,7 +33,7 @@ module.exports = async helper => {
       return;
     }
 
-    await commandExists('git');
+    await commandExists("git");
 
     // TODO: Figure out how to do this correctly
     // const gitPixelsCommitList = await exec(
@@ -58,7 +57,11 @@ module.exports = async helper => {
     //   return;
     // }
 
-    if (!gitPixelsCommitLog.stdout.includes(TQ_LOCAL_GIT_USER_NAME)) {
+    if (
+      !gitPixelsCommitLog.stdout
+        .toLowerCase()
+        .includes(TQ_LOCAL_GIT_USER_NAME.toLowerCase())
+    ) {
       helper.fail(
         `We didn't find a commit with your git username, ${TQ_LOCAL_GIT_USER_NAME}, on it for the "_data/pixels.json" file! Have you committed your changes?`
       );
