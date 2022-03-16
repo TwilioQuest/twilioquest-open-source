@@ -23,7 +23,7 @@ module.exports = async helper => {
 
     const prOwner = parsedResponseBody.user.login;
 
-    if (prOwner !== TQ_GITHUB_USERNAME) {
+    if (prOwner.toLowerCase() !== TQ_GITHUB_USERNAME.toLowerCase()) {
       helper.fail(
         `We found the Pull Request #${prNumber} on the Open Pixel Art remote repository, but it doesn't belong to your GitHub user "${TQ_GITHUB_USERNAME}"!`
       );
