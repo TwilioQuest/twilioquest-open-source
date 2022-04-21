@@ -1,0 +1,17 @@
+{
+  "title": "オープンソースへの貢献: 上流へのプッシュ",
+  "description": "変更が完了したので、GitHub上でフォークされたリポジトリに対し、<strong>変更を上流へプッシュ</strong>します。",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "prompt",
+      "type": "prompt",
+      "placeholder": "",
+      "label": "ピクセルを上流にプッシュし、[HACK]をクリックします。"
+    }
+  ],
+  "rewards": {
+    "xp": 100,
+    "items": []
+  }
+}

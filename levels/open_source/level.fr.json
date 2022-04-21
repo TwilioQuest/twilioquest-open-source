@@ -1,0 +1,33 @@
+{
+  "title": "La forêt de l'Open Source",
+  "description": "Les Druides de l'Open Source protègent ce monde forestier sacré depuis des générations, en aidant ceux qui souhaitent contribuer à des projets Open Source. Selon des rapports locaux, le chemin menant à la Flamme de l'Open Source, un artefact sacré, est bloqué. Enquêtez dès que possible!",
+  "questDescription": "Explorez la forêt et débloquez le chemin menant à la Flamme de l'Open Source.",
+  "navMap": {
+    "x": 75,
+    "y": 10,
+    "sprite": "nav_map/forest_of_open_source.png"
+  },
+  "priority": 2,
+  "backgroundMusic": "fascinatingarea_108253b",
+  "backgroundEffect": {
+    "key": "starfield",
+    "options": {
+      "baseSpeed": 0.03,
+      "direction": "topToBottom"
+    }
+  },
+  "flavorTextOverrides": {},
+  "objectives": [
+    "01_create_github",
+    "02_fork_project",
+    "03_install_git",
+    "03b_configure_git",
+    "04_git_clone",
+    "05_git_branch",
+    "06_make_edits",
+    "06b_commit_hash",
+    "08_push_upstream",
+    "09_make_pr",
+    "12_merge_another"
+  ]
+}

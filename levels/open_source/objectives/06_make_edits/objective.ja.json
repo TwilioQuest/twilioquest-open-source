@@ -1,0 +1,19 @@
+{
+  "title": "オープンソースへの貢献: コントリビューションの作成",
+  "description": "これで、開発ブランチのプロジェクトに対して<strong>コントリビューションを作成する</strong>準備が整いました。コードを記述しましょう。",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "prompt",
+      "type": "prompt",
+      "placeholder": "",
+      "label": "新しいピクセルをコミットし、[HACK]をクリックします。"
+    }
+  ],
+  "rewards": {
+    "xp": 300,
+    "items": [
+      "flame_of_open_source"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Contribuer à l'open source: Créer votre contribution",
+  "description": "Vous êtes maintenant prêt à <strong>créer votre contribution</strong> au projet dans une branche de développement. Écrivez du code!",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "prompt",
+      "type": "prompt",
+      "placeholder": "",
+      "label": "Une fois que vous avez validé votre nouveau pixel, cliquez sur HACK!"
+    }
+  ],
+  "rewards": {
+    "xp": 300,
+    "items": [
+      "flame_of_open_source"
+    ]
+  }
+}

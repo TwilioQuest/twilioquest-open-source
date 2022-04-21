@@ -1,0 +1,17 @@
+{
+  "title": "オープンソースへの貢献: リポジトリのクローン作成",
+  "description": "gitコマンドラインツールを使用し、Open Pixel Artリポジトリのフォークを<strong>クローン</strong>し、プロジェクトに貢献しましょう。",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "repositoryFilePath",
+      "type": "text",
+      "placeholder": "C:\\projects\\open-pixel-art",
+      "label": "新しくクローンしたOpen Pixel Artリポジトリのファイルパスを入力します。"
+    }
+  ],
+  "rewards": {
+    "xp": 200,
+    "items": []
+  }
+}

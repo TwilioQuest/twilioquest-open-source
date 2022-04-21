@@ -1,0 +1,19 @@
+{
+  "title": "オープンソースへの貢献: GitHubに参加する",
+  "description": "<strong>GitHubアカウントを作成</strong>し、GitHubを使用してソースコードをホストするオープンソースプロジェクトに貢献します。",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "username",
+      "type": "text",
+      "placeholder": "e.g. samantha_smith99",
+      "label": "ここにGitHubユーザー名を入力してください。"
+    }
+  ],
+  "rewards": {
+    "xp": 100,
+    "items": [
+      "octocat_ears"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "title": "オープンソースへの貢献: プルリクエストを開く",
+  "description": "<strong>プルリクエスト</strong>を作成し、プロジェクトへの貢献を送信します。",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "prNumber",
+      "type": "text",
+      "placeholder": "pull request number",
+      "label": "ここに作成するプルリクエスト番号を入力してください。"
+    }
+  ],
+  "rewards": {
+    "xp": 100,
+    "items": [
+      "github_hoodie"
+    ]
+  }
+}

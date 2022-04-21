@@ -1,0 +1,17 @@
+{
+  "title": "オープンソースへの貢献: 私たちのフォークの同期",
+  "description": "変更が完了しました。最新の変更がすべて手元にあるようにしましょう。",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "prompt",
+      "type": "prompt",
+      "placeholder": "",
+      "label": "リポジトリを同期し、[HACK]をクリックします。"
+    }
+  ],
+  "rewards": {
+    "xp": 0,
+    "items": []
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Contribuer à l'open source: Fusionner le master",
+  "description": "Notre branche master est synchronisée. Il est temps de fusionner ces modifications dans notre nouvelle branche.",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "prompt",
+      "type": "prompt",
+      "placeholder": "",
+      "label": "Cliquez sur Hack une fois que vous avez mis à jour votre nouvelle branche avec une fusion!"
+    }
+  ],
+  "rewards": {
+    "xp": 0,
+    "items": []
+  }
+}

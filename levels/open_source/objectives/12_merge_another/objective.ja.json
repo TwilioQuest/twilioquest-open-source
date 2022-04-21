@@ -1,0 +1,29 @@
+{
+  "title": "オープンソースへの貢献: もう1つ",
+  "description": "これで、オープンソースに貢献する方法が分かりました。別のオープンソースプロジェクトにも貢献してみましょう。",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "repositoryOwner",
+      "type": "text",
+      "placeholder": "twilio-labs",
+      "label": "貢献したリポジトリを所有するグループのユーザー名をここに入力してください。"
+    },
+    {
+      "name": "repository",
+      "type": "text",
+      "placeholder": "open-pixel-art",
+      "label": "貢献したリポジトリ名をここに入力してください。"
+    },
+    {
+      "name": "prNumber",
+      "type": "text",
+      "placeholder": "1",
+      "label": "ここに作成するプルリクエスト番号を入力してください。"
+    }
+  ],
+  "rewards": {
+    "xp": 500,
+    "items": []
+  }
+}

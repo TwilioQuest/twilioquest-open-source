@@ -1,0 +1,17 @@
+{
+  "title": "オープンソースへの貢献: Gitを設定する",
+  "description": "リポジトリへの貢献に関連付ける<strong>ユーザー名と電子メールアドレス</strong>を設定します。",
+  "show_ide": false,
+  "validation_fields": [
+    {
+      "name": "prompt",
+      "type": "prompt",
+      "placeholder": "",
+      "label": "ユーザー名と電子メールで\"git\"を設定し、[Hack]をクリックします。"
+    }
+  ],
+  "rewards": {
+    "xp": 100,
+    "items": []
+  }
+}
