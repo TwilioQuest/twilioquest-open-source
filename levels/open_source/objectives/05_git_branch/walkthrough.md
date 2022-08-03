@@ -46,4 +46,4 @@ git checkout master
 
 ## Check my work!
 
-Now, you should have created your new branch and checked it out. We'll make out code change on this branch in the next objective! For now, type your branch name into the field on the right and click `HACK`!
+Now, you should have created your new branch and checked it out. We'll make our code change on this branch in the next objective! For now, type your branch name into the field on the right and click `HACK`!
