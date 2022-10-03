@@ -322,8 +322,20 @@
                  "type":"player",
                  "visible":true,
                  "width":0,
-                 "x":426,
-                 "y":66
+                 "x":416.031951389986,
+                 "y":57.6718676755734
+                }, 
+                {
+                 "gid":11827,
+                 "height":24,
+                 "id":381,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":48,
+                 "x":456,
+                 "y":408
                 }],
          "opacity":1,
          "properties":[
@@ -424,16 +436,16 @@
                  "value":true
                 }],
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":35,
          "x":0,
          "y":0
         }],
  "nextlayerid":35,
- "nextobjectid":379,
+ "nextobjectid":382,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.6.0",
+ "tiledversion":"1.7.2",
  "tileheight":24,
  "tilesets":[
         {
