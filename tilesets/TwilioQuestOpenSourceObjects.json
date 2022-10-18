@@ -8,8 +8,8 @@
  "margin":0,
  "name":"TwilioQuestOpenSourceObjects",
  "spacing":0,
- "tilecount":8,
- "tiledversion":"1.6.0",
+ "tilecount":9,
+ "tiledversion":"1.7.2",
  "tileheight":32,
  "tiles":[
         {
@@ -205,7 +205,6 @@
          "objectgroup":
             {
              "draworder":"index",
-             "id":3,
              "name":"",
              "objects":[
                     {
@@ -232,6 +231,29 @@
                  "value":true
                 }],
          "type":"brush"
+        }, 
+        {
+         "id":10,
+         "image":"..\/objects\/daizen\/daizen.png",
+         "imageheight":32,
+         "imagewidth":32,
+         "properties":[
+                {
+                 "name":"conversation",
+                 "type":"string",
+                 "value":"daizen"
+                }, 
+                {
+                 "name":"conversationAvatar",
+                 "type":"string",
+                 "value":"daizen.png"
+                }, 
+                {
+                 "name":"interactable",
+                 "type":"bool",
+                 "value":true
+                }],
+         "type":"daizen"
         }],
  "tilewidth":32,
  "type":"tileset",
