@@ -1,14 +1,15 @@
 const got = require("got");
 const util = require("util");
 const exec = util.promisify(require("child_process").exec);
+const { checkSetup } = require("../../../../scripts/objectiveValidation");
 
 module.exports = async (helper) => {
-  const { TQ_GITHUB_USERNAME, TQ_OPEN_PIXEL_ART_DIR, GIT_EXE } = helper.env;
+  const { TQ_GITHUB_USERNAME, TQ_OPEN_PIXEL_ART_DIR, TQ_GIT_EXE } = helper.env;
 
   try {
-    checkSetup(GIT_EXE);
+    checkSetup(TQ_GIT_EXE);
   } catch (err) {
-    helper.fail(`We did not find command line git installed on your computer!`);
+    helper.fail(err);
     return;
   }
 

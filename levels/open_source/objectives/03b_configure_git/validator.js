@@ -4,10 +4,10 @@ const { checkSetup } = require("../../../../scripts/objectiveValidation");
 
 module.exports = async (helper) => {
   try {
-    const { GIT_EXE } = helper.env;
-    checkSetup(GIT_EXE);
+    const { TQ_GIT_EXE } = helper.env;
+    checkSetup(TQ_GIT_EXE);
   } catch (err) {
-    helper.fail(`We did not find command line git installed on your computer!`);
+    helper.fail(err);
     return;
   }
 

@@ -2,19 +2,20 @@ const util = require("util");
 const exec = util.promisify(require("child_process").exec);
 const jetpack = require("fs-jetpack");
 const path = require("path");
+const { checkSetup } = require("../../../../scripts/objectiveValidation");
 
 module.exports = async (helper) => {
   const {
     TQ_OPEN_PIXEL_ART_DIR,
     TQ_LOCAL_GIT_USER_NAME,
     TQ_GITHUB_USERNAME,
-    GIT_EXE,
+    TQ_GIT_EXE,
   } = helper.env;
 
   try {
-    checkSetup(GIT_EXE);
+    checkSetup(TQ_GIT_EXE);
   } catch (err) {
-    helper.fail(`We did not find command line git installed on your computer!`);
+    helper.fail(err);
     return;
   }
 
