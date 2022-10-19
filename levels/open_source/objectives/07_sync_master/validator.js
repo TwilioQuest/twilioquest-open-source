@@ -1,23 +1,28 @@
-const got = require('got');
-const commandExists = require('command-exists');
-const util = require('util');
-const exec = util.promisify(require('child_process').exec);
+const got = require("got");
+const util = require("util");
+const exec = util.promisify(require("child_process").exec);
 
-module.exports = async helper => {
-  const { TQ_GITHUB_USERNAME, TQ_OPEN_PIXEL_ART_DIR } = helper.env;
+module.exports = async (helper) => {
+  const { TQ_GITHUB_USERNAME, TQ_OPEN_PIXEL_ART_DIR, GIT_EXE } = helper.env;
 
   try {
-    await commandExists('git');
+    checkSetup(GIT_EXE);
+  } catch (err) {
+    helper.fail(`We did not find command line git installed on your computer!`);
+    return;
+  }
+
+  try {
     const gitRemote = await exec(`git remote -v`, {
       cwd: TQ_OPEN_PIXEL_ART_DIR,
     });
 
-    const remoteStrings = gitRemote.stdout.trim().split('\n');
-    const remotes = remoteStrings.map(remoteString =>
+    const remoteStrings = gitRemote.stdout.trim().split("\n");
+    const remotes = remoteStrings.map((remoteString) =>
       remoteString.split(/\s+/)
     );
 
-    const upstreamRemotes = remotes.filter(([name]) => name === 'upstream');
+    const upstreamRemotes = remotes.filter(([name]) => name === "upstream");
 
     if (upstreamRemotes.length === 0) {
       helper.fail(
@@ -28,8 +33,8 @@ module.exports = async helper => {
 
     const isUpstreamUrlCorrect = remotes.find(
       ([, url]) =>
-        url === 'https://github.com/twilio-labs/open-pixel-art.git' ||
-        url === 'git@github.com:twilio-labs/open-pixel-art.git'
+        url === "https://github.com/twilio-labs/open-pixel-art.git" ||
+        url === "git@github.com:twilio-labs/open-pixel-art.git"
     );
 
     if (!isUpstreamUrlCorrect) {

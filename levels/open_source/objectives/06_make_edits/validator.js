@@ -1,12 +1,22 @@
-const commandExists = require("command-exists");
 const util = require("util");
 const exec = util.promisify(require("child_process").exec);
 const jetpack = require("fs-jetpack");
 const path = require("path");
 
 module.exports = async (helper) => {
-  const { TQ_OPEN_PIXEL_ART_DIR, TQ_LOCAL_GIT_USER_NAME, TQ_GITHUB_USERNAME } =
-    helper.env;
+  const {
+    TQ_OPEN_PIXEL_ART_DIR,
+    TQ_LOCAL_GIT_USER_NAME,
+    TQ_GITHUB_USERNAME,
+    GIT_EXE,
+  } = helper.env;
+
+  try {
+    checkSetup(GIT_EXE);
+  } catch (err) {
+    helper.fail(`We did not find command line git installed on your computer!`);
+    return;
+  }
 
   try {
     const pixelsPath = path.join(TQ_OPEN_PIXEL_ART_DIR, "_data", "pixels.json");
@@ -32,8 +42,6 @@ module.exports = async (helper) => {
       );
       return;
     }
-
-    await commandExists("git");
 
     // TODO: Figure out how to do this correctly
     // const gitPixelsCommitList = await exec(
