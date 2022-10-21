@@ -1,23 +1,34 @@
-const got = require('got');
-const commandExists = require('command-exists');
-const util = require('util');
-const exec = util.promisify(require('child_process').exec);
+const got = require("got");
+const { execGitWithArgs } = require("../../../../scripts/objectiveValidation");
 
-module.exports = async helper => {
+module.exports = async (helper) => {
   const { TQ_GITHUB_USERNAME, TQ_OPEN_PIXEL_ART_DIR } = helper.env;
 
+  if (!TQ_GITHUB_USERNAME) {
+    helper.fail(
+      `You do not have the environment variable <span class="highlight">TQ_GITHUB_USERNAME</span> set. Return to a previous objective to make sure its set correctly!`
+    );
+    return;
+  }
+
+  if (!TQ_OPEN_PIXEL_ART_DIR) {
+    helper.fail(
+      `You do not have the environment variable <span class="highlight">TQ_OPEN_PIXEL_ART_DIR</span> set. Return to a previous objective to make sure its set correctly!`
+    );
+    return;
+  }
+
   try {
-    await commandExists('git');
-    const gitRemote = await exec(`git remote -v`, {
+    const gitRemote = await execGitWithArgs(helper, `remote -v`, {
       cwd: TQ_OPEN_PIXEL_ART_DIR,
     });
 
-    const remoteStrings = gitRemote.stdout.trim().split('\n');
-    const remotes = remoteStrings.map(remoteString =>
+    const remoteStrings = gitRemote.stdout.trim().split("\n");
+    const remotes = remoteStrings.map((remoteString) =>
       remoteString.split(/\s+/)
     );
 
-    const upstreamRemotes = remotes.filter(([name]) => name === 'upstream');
+    const upstreamRemotes = remotes.filter(([name]) => name === "upstream");
 
     if (upstreamRemotes.length === 0) {
       helper.fail(
@@ -28,8 +39,8 @@ module.exports = async helper => {
 
     const isUpstreamUrlCorrect = remotes.find(
       ([, url]) =>
-        url === 'https://github.com/twilio-labs/open-pixel-art.git' ||
-        url === 'git@github.com:twilio-labs/open-pixel-art.git'
+        url === "https://github.com/twilio-labs/open-pixel-art.git" ||
+        url === "git@github.com:twilio-labs/open-pixel-art.git"
     );
 
     if (!isUpstreamUrlCorrect) {

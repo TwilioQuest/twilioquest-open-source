@@ -1,8 +1,6 @@
-const commandExists = require('command-exists');
-const util = require('util');
-const exec = util.promisify(require('child_process').exec);
+const { execGitWithArgs } = require("../../../../scripts/objectiveValidation");
 
-module.exports = async helper => {
+module.exports = async (helper) => {
   const { TQ_OPEN_PIXEL_ART_DIR } = helper.env;
   const { branchName } = helper.validationFields;
 
@@ -12,14 +10,17 @@ module.exports = async helper => {
   }
 
   try {
-    await commandExists('git');
-    const gitBranchList = await exec(`git branch --list ${branchName}`, {
-      cwd: TQ_OPEN_PIXEL_ART_DIR,
-    });
+    const gitBranchList = await execGitWithArgs(
+      helper,
+      `branch --list ${branchName}`,
+      {
+        cwd: TQ_OPEN_PIXEL_ART_DIR,
+      }
+    );
 
     const branches = gitBranchList.stdout
-      .split('\n')
-      .map(branch => branch.trim());
+      .split("\n")
+      .map((branch) => branch.trim());
 
     const branchCheckedOutName = `* ${branchName}`;
 
@@ -42,7 +43,7 @@ module.exports = async helper => {
 
     helper.success(
       `It looks like you created and checked out the branch "${branchName}" correctly!`,
-      [{ name: 'OPEN_PIXEL_ART_BRANCH', value: branchName }]
+      [{ name: "OPEN_PIXEL_ART_BRANCH", value: branchName }]
     );
   } catch (err) {
     helper.fail(

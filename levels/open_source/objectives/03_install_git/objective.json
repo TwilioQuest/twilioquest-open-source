@@ -4,6 +4,12 @@
   "show_ide": false,
   "validation_fields": [
     {
+      "name": "gitPath",
+      "type": "text",
+      "placeholder": "/usr/bin/git",
+      "label": "Paste in the path to your Git executable as described in the objective."
+    },
+    {
       "name": "prompt",
       "type": "prompt",
       "placeholder": "",

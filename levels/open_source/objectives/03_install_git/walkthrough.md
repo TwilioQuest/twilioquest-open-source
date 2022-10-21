@@ -1,3 +1,5 @@
+<% const isWindows = context.systemInfo.os === 'win32'; %>
+
 # Installing Git
 
 ## What is git?
@@ -20,7 +22,7 @@ If the command line version doesn't click with you, give GitHub Desktop a try af
 
 ## Hack away!
 
-Follow the [official git installation instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). Once you've done that, run the following command in your terminal to ensure `git` is installed correctly.
+Follow the [official git installation instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). Once you've done that, you can run the following command in your terminal to ensure `git` is installed correctly.
 
 ```
 git --version
@@ -32,4 +34,20 @@ If git is installed correctly, you should see text that looks like this:
 git version 2.22.0
 ```
 
-Once you've verified you have `git` installed locally, click `HACK`.
+Next, we need to find the **full path** to where the `git` command was installed on your computer. Running the following command in `<%= isWindows ? "PowerShell" : "Terminal" %>` should give you a file path pointing to your `git` installation.
+
+<% if(isWindows) { %>
+
+```bash
+Get-Command git.exe | Select-Object -ExpandProperty Definition
+```
+
+<% } else { %>
+
+```bash
+which git
+```
+
+<% } %>
+
+Once you have the **full path** to the `git` installation, paste it into the text field on the right and click `HACK`.

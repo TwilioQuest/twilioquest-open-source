@@ -1,14 +1,25 @@
-const commandExists = require('command-exists');
-const util = require('util');
-const exec = util.promisify(require('child_process').exec);
+const { execGitWithArgs } = require("../../../../scripts/objectiveValidation");
 
-module.exports = async helper => {
+module.exports = async (helper) => {
   const { TQ_LOCAL_GIT_USER_NAME, TQ_OPEN_PIXEL_ART_DIR } = helper.env;
-  const commitHash = helper.getNormalizedInput('commitHash');
+  const commitHash = helper.getNormalizedInput("commitHash");
+
+  if (!TQ_OPEN_PIXEL_ART_DIR) {
+    helper.fail(
+      `You do not have the environment variable <span class="highlight">TQ_OPEN_PIXEL_ART_DIR</span> set. Return to a previous objective to make sure its set correctly!`
+    );
+    return;
+  }
+
+  if (!TQ_LOCAL_GIT_USER_NAME) {
+    helper.fail(
+      `You do not have the environment variable <span class="highlight">TQ_LOCAL_GIT_USER_NAME</span> set. Return to a previous objective to make sure its set correctly!`
+    );
+    return;
+  }
 
   try {
-    await commandExists('git');
-    const gitShowCommit = await exec(`git show ${commitHash}`, {
+    const gitShowCommit = await execGitWithArgs(helper, `show ${commitHash}`, {
       cwd: TQ_OPEN_PIXEL_ART_DIR,
     });
 

@@ -1,12 +1,31 @@
-const commandExists = require("command-exists");
-const util = require("util");
-const exec = util.promisify(require("child_process").exec);
 const jetpack = require("fs-jetpack");
 const path = require("path");
+const { execGitWithArgs } = require("../../../../scripts/objectiveValidation");
 
 module.exports = async (helper) => {
   const { TQ_OPEN_PIXEL_ART_DIR, TQ_LOCAL_GIT_USER_NAME, TQ_GITHUB_USERNAME } =
     helper.env;
+
+  if (!TQ_OPEN_PIXEL_ART_DIR) {
+    helper.fail(
+      `You do not have the environment variable <span class="highlight">TQ_OPEN_PIXEL_ART_DIR</span> set. Return to a previous objective to make sure its set correctly!`
+    );
+    return;
+  }
+
+  if (!TQ_LOCAL_GIT_USER_NAME) {
+    helper.fail(
+      `You do not have the environment variable <span class="highlight">TQ_LOCAL_GIT_USER_NAME</span> set. Return to a previous objective to make sure its set correctly!`
+    );
+    return;
+  }
+
+  if (!TQ_GITHUB_USERNAME) {
+    helper.fail(
+      `You do not have the environment variable <span class="highlight">TQ_GITHUB_USERNAME</span> set. Return to a previous objective to make sure its set correctly!`
+    );
+    return;
+  }
 
   try {
     const pixelsPath = path.join(TQ_OPEN_PIXEL_ART_DIR, "_data", "pixels.json");
@@ -33,8 +52,6 @@ module.exports = async (helper) => {
       return;
     }
 
-    await commandExists("git");
-
     // TODO: Figure out how to do this correctly
     // const gitPixelsCommitList = await exec(
     //   `git shortlog -ns _data/pixels.json < /dev/tty`,
@@ -44,10 +61,14 @@ module.exports = async (helper) => {
     //   }
     // );
 
-    const gitPixelsCommitLog = await exec(`git log _data/pixels.json`, {
-      cwd: TQ_OPEN_PIXEL_ART_DIR,
-      timeout: 2000,
-    });
+    const gitPixelsCommitLog = await execGitWithArgs(
+      helper,
+      `log _data/pixels.json`,
+      {
+        cwd: TQ_OPEN_PIXEL_ART_DIR,
+        timeout: 2000,
+      }
+    );
 
     // TODO: Figure out how to do this correctly
     // if (!gitPixelsCommitList.stdout.includes(TQ_LOCAL_GIT_USER_NAME)) {
@@ -75,7 +96,8 @@ module.exports = async (helper) => {
     helper.fail(
       `We ran into a problem trying to validate you added your new pixel!
       
-      ${JSON.stringify(err, undefined, 2)}`
+      ${err.message}`
     );
+    console.error(err);
   }
 };
