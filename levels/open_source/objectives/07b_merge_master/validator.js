@@ -1,14 +1,26 @@
-const commandExists = require('command-exists');
-const util = require('util');
-const exec = util.promisify(require('child_process').exec);
+const { execGitWithArgs } = require("../../../../scripts/objectiveValidation");
 
-module.exports = async helper => {
+module.exports = async (helper) => {
   const { TQ_OPEN_PIXEL_ART_DIR, TQ_OPEN_PIXEL_ART_BRANCH } = helper.env;
 
+  if (!TQ_OPEN_PIXEL_ART_DIR) {
+    helper.fail(
+      `You do not have the environment variable <span class="highlight">TQ_OPEN_PIXEL_ART_DIR</span> set. Return to a previous objective to make sure its set correctly!`
+    );
+    return;
+  }
+
+  if (!TQ_OPEN_PIXEL_ART_BRANCH) {
+    helper.fail(
+      `You do not have the environment variable <span class="highlight">TQ_OPEN_PIXEL_ART_BRANCH</span> set. Return to a previous objective to make sure its set correctly!`
+    );
+    return;
+  }
+
   try {
-    await commandExists('git');
-    const gitLogLastMasterCommit = await exec(
-      `git log master -n 1 --pretty=format:"%H"`,
+    const gitLogLastMasterCommit = await execGitWithArgs(
+      helper,
+      `log master -n 1 --pretty=format:"%H"`,
       {
         cwd: TQ_OPEN_PIXEL_ART_DIR,
       }
@@ -16,8 +28,9 @@ module.exports = async helper => {
 
     const latestMasterCommit = gitLogLastMasterCommit.stdout;
 
-    const gitBranchListContainingMasterCommit = await exec(
-      `git branch --contains ${latestMasterCommit}`,
+    const gitBranchListContainingMasterCommit = await execGitWithArgs(
+      helper,
+      `branch --contains ${latestMasterCommit}`,
       {
         cwd: TQ_OPEN_PIXEL_ART_DIR,
       }

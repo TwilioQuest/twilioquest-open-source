@@ -1,20 +1,25 @@
 const got = require("got");
-const util = require("util");
-const exec = util.promisify(require("child_process").exec);
-const { checkSetup } = require("../../../../scripts/objectiveValidation");
+const { execGitWithArgs } = require("../../../../scripts/objectiveValidation");
 
 module.exports = async (helper) => {
-  const { TQ_GITHUB_USERNAME, TQ_OPEN_PIXEL_ART_DIR, TQ_GIT_EXE } = helper.env;
+  const { TQ_GITHUB_USERNAME, TQ_OPEN_PIXEL_ART_DIR } = helper.env;
 
-  try {
-    checkSetup(TQ_GIT_EXE);
-  } catch (err) {
-    helper.fail(err);
+  if (!TQ_GITHUB_USERNAME) {
+    helper.fail(
+      `You do not have the environment variable <span class="highlight">TQ_GITHUB_USERNAME</span> set. Return to a previous objective to make sure its set correctly!`
+    );
+    return;
+  }
+
+  if (!TQ_OPEN_PIXEL_ART_DIR) {
+    helper.fail(
+      `You do not have the environment variable <span class="highlight">TQ_OPEN_PIXEL_ART_DIR</span> set. Return to a previous objective to make sure its set correctly!`
+    );
     return;
   }
 
   try {
-    const gitRemote = await exec(`git remote -v`, {
+    const gitRemote = await execGitWithArgs(helper, `remote -v`, {
       cwd: TQ_OPEN_PIXEL_ART_DIR,
     });
 
