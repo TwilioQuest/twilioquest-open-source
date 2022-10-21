@@ -39,13 +39,13 @@ Next, we need to find the **full path** to where the `git` command was installed
 <% if(isWindows) { %>
 
 ```bash
-Get-Command node.exe | Select-Object -ExpandProperty Definition
+Get-Command git.exe | Select-Object -ExpandProperty Definition
 ```
 
 <% } else { %>
 
 ```bash
-which node
+which git
 ```
 
 <% } %>

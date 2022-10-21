@@ -34,16 +34,16 @@ module.exports = async (helper) => {
         );
       } else {
         helper.fail(`
-        Welp... something went wrong when we tried to validate this Git
-        path. Double check the path and try again.
+        We received a non-zero exit code when it tried to validate the provided git version. Double check the path and try again.
       `);
       }
     });
   } catch (e) {
     helper.fail(`
-    Sorry! We couldn't validate your Git installation. Please try
-    again.
+    Sorry! We couldn't validate your Git installation. We saw an unexpected error.
+
+    ${e.message}
     `);
-    console.log(e);
+    console.error(e);
   }
 };
