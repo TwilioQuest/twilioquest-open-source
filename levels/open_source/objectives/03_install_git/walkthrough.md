@@ -1,3 +1,5 @@
+<% const isWindows = context.systemInfo.os === 'win32'; %>
+
 # Installing Git
 
 ## What is git?
@@ -32,16 +34,20 @@ If git is installed correctly, you should see text that looks like this:
 git version 2.22.0
 ```
 
-Next, paste in the **full path** to where the `git` command was installed on your computer. See the Help section if you aren't sure where to find that information. Paste the path in to the text field on the right, then click the _HACK_ button.
+Next, we need to find the **full path** to where the `git` command was installed on your computer. Running the following command in `<%= isWindows ? "PowerShell" : "Terminal" %>` should give you a file path pointing to your `git` installation.
+
+<% if(isWindows) { %>
+
+```bash
+Get-Command node.exe | Select-Object -ExpandProperty Definition
+```
+
+<% } else { %>
 
 ```bash
 which node
 ```
 
-On Windows in PowerShell, you could use this command:
-
-```bash
-Get-Command node.exe | Select-Object -ExpandProperty Definition
-```
+<% } %>
 
 Once you have the **full path** to the `git` installation, paste it into the text field on the right and click `HACK`.
