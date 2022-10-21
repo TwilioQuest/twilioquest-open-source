@@ -1,9 +1,7 @@
-const util = require("util");
-const exec = util.promisify(require("child_process").exec);
-const { checkSetup } = require("../../../../scripts/objectiveValidation");
+const { execGitWithArgs } = require("../../../../scripts/objectiveValidation");
 
 module.exports = async (helper) => {
-  const { TQ_OPEN_PIXEL_ART_DIR, TQ_GIT_EXE } = helper.env;
+  const { TQ_OPEN_PIXEL_ART_DIR } = helper.env;
   const { branchName } = helper.validationFields;
 
   if (!branchName) {
@@ -12,16 +10,13 @@ module.exports = async (helper) => {
   }
 
   try {
-    checkSetup(TQ_GIT_EXE);
-  } catch (err) {
-    helper.fail(err);
-    return;
-  }
-
-  try {
-    const gitBranchList = await exec(`git branch --list ${branchName}`, {
-      cwd: TQ_OPEN_PIXEL_ART_DIR,
-    });
+    const gitBranchList = await execGitWithArgs(
+      helper,
+      `branch --list ${branchName}`,
+      {
+        cwd: TQ_OPEN_PIXEL_ART_DIR,
+      }
+    );
 
     const branches = gitBranchList.stdout
       .split("\n")

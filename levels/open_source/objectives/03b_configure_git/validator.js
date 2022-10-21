@@ -1,26 +1,16 @@
-const util = require("util");
-const exec = util.promisify(require("child_process").exec);
-const { checkSetup } = require("../../../../scripts/objectiveValidation");
+const { execGitWithArgs } = require("../../../../scripts/objectiveValidation");
 
 module.exports = async (helper) => {
   try {
-    const { TQ_GIT_EXE } = helper.env;
-    checkSetup(TQ_GIT_EXE);
-  } catch (err) {
-    helper.fail(err);
-    return;
-  }
-
-  try {
-    const gitConfigList = await exec("git config --list");
+    const gitConfigList = await execGitWithArgs(helper, `config --list`);
 
     if (!gitConfigList.stdout.includes("user.email=")) {
-      helper.fail(`We did not find the you email configured correctly!`);
+      helper.fail(`We did not find your email configured correctly!`);
       return;
     }
 
     if (!gitConfigList.stdout.includes("user.name=")) {
-      helper.fail(`We did not find the you user name configured correctly!`);
+      helper.fail(`We did not find your user name configured correctly!`);
       return;
     }
 
@@ -31,12 +21,13 @@ module.exports = async (helper) => {
     const [, userName] = gitUserNameOption.trim().split("=");
 
     helper.success(
-      `It looks like your email and name are configured correctly!`,
+      `It looks like your email and user name are configured correctly!`,
       [{ name: "LOCAL_GIT_USER_NAME", value: userName }]
     );
   } catch (err) {
     helper.fail(`Something went wrong while tried to validate your git configuration!
     
-    ${err}`);
+    ${err.message}`);
+    console.error(err);
   }
 };
