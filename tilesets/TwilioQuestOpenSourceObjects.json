@@ -9,7 +9,7 @@
  "name":"TwilioQuestOpenSourceObjects",
  "spacing":0,
  "tilecount":8,
- "tiledversion":"1.6.0",
+ "tiledversion":"1.7.2",
  "tileheight":32,
  "tiles":[
         {
@@ -205,7 +205,6 @@
          "objectgroup":
             {
              "draworder":"index",
-             "id":3,
              "name":"",
              "objects":[
                     {
