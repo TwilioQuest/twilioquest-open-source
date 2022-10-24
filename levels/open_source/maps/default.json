@@ -3189,6 +3189,18 @@
                  "width":24,
                  "x":1081,
                  "y":882
+                }, 
+                {
+                 "gid":14996,
+                 "height":32,
+                 "id":328,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":562.905630452022,
+                 "y":304.131112873381
                 }],
          "opacity":1,
          "properties":[
@@ -3539,7 +3551,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":true,
+         "visible":false,
          "x":0,
          "y":0
         }, 
@@ -3619,13 +3631,13 @@
                  "value":true
                 }],
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":52,
          "x":0,
          "y":0
         }],
  "nextlayerid":35,
- "nextobjectid":327,
+ "nextobjectid":329,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.7.2",
@@ -3679,6 +3691,10 @@
         {
          "firstgid":13116,
          "source":"..\/..\/..\/..\/twilioquest-base\/tilesets\/Tileset_API-Interior.json"
+        }, 
+        {
+         "firstgid":14916,
+         "source":"..\/..\/..\/..\/.bundled\/tilesets\/TwilioQuestObjects.json"
         }],
  "tilewidth":24,
  "type":"map",
