@@ -462,24 +462,6 @@
                  "y":744
                 }, 
                 {
-                 "gid":11817,
-                 "height":32,
-                 "id":139,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"observation",
-                         "type":"string",
-                         "value":"<i>The vendors in the town square have a variety of wares from across The Cloud. You wish you have time to stop and browse.<\/i>"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":306,
-                 "y":744
-                }, 
-                {
                  "gid":11814,
                  "height":32,
                  "id":140,
@@ -3201,6 +3183,24 @@
                  "width":32,
                  "x":573.421670952453,
                  "y":306.929259315283
+                }, 
+                {
+                 "gid":11816,
+                 "height":32,
+                 "id":328,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"observation",
+                         "type":"string",
+                         "value":"<i>The vendors in the town square have a variety of wares from across The Cloud. You wish you have time to stop and browse.<\/i>"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":306,
+                 "y":744
                 }],
          "opacity":1,
          "properties":[
@@ -3637,7 +3637,7 @@
          "y":0
         }],
  "nextlayerid":35,
- "nextobjectid":328,
+ "nextobjectid":329,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.7.2",
