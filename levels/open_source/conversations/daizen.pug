@@ -1,0 +1,19 @@
+conversation(display_name="Daizen")
+  case lastResponse
+    when "how_does_it_work"
+      statement#how_does_it_work
+        text.
+          Fantastic question! The device allows you to hear a direct translation of any language in the
+          Cloud instantaneously, as well as switch your output sound–allowing for accurate and
+          seamless communication.
+      responses
+    default
+      statement#default
+        text.
+          Welcome, Operator, to the Forest of Open Source! This land is home to the <span class="highlight">druids</span>, a resourceful 
+          folk who live off the lands here. You can find them in their tree-top village just past the bridge ahead!
+          <br/><br/> You should have no trouble communicating with the druids as well, since I’ve equipped your Operator 
+          helmet with a <span class="highlight">Universal Translating Device</span>.
+      responses
+        response#how_does_it_work.
+          How does the "Universal Translating Device" work?
