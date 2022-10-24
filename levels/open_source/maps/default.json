@@ -462,24 +462,6 @@
                  "y":744
                 }, 
                 {
-                 "gid":11817,
-                 "height":32,
-                 "id":139,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"observation",
-                         "type":"string",
-                         "value":"<i>The vendors in the town square have a variety of wares from across The Cloud. You wish you have time to stop and browse.<\/i>"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":306,
-                 "y":744
-                }, 
-                {
                  "gid":11814,
                  "height":32,
                  "id":140,
@@ -3189,6 +3171,36 @@
                  "width":24,
                  "x":1081,
                  "y":882
+                }, 
+                {
+                 "gid":14996,
+                 "height":32,
+                 "id":327,
+                 "name":"",
+                 "rotation":0,
+                 "type":"npc-daizen",
+                 "visible":true,
+                 "width":32,
+                 "x":572.8624620684,
+                 "y":305.920446157631
+                }, 
+                {
+                 "gid":11816,
+                 "height":32,
+                 "id":328,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"observation",
+                         "type":"string",
+                         "value":"<i>The vendors in the town square have a variety of wares from across The Cloud. You wish you have time to stop and browse.<\/i>"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":306,
+                 "y":744
                 }],
          "opacity":1,
          "properties":[
@@ -3536,6 +3548,54 @@
                  "width":50,
                  "x":515,
                  "y":887
+                }, 
+                {
+                 "gid":773,
+                 "height":11.1099,
+                 "id":332,
+                 "name":"",
+                 "rotation":0,
+                 "type":"collider",
+                 "visible":true,
+                 "width":11.5382,
+                 "x":1234,
+                 "y":813
+                }, 
+                {
+                 "gid":773,
+                 "height":12.7664766091383,
+                 "id":333,
+                 "name":"",
+                 "rotation":0,
+                 "type":"collider",
+                 "visible":true,
+                 "width":11.5382,
+                 "x":79,
+                 "y":428
+                }, 
+                {
+                 "gid":773,
+                 "height":11.1098611437631,
+                 "id":329,
+                 "name":"",
+                 "rotation":0,
+                 "type":"collider",
+                 "visible":true,
+                 "width":11.5382243663164,
+                 "x":370,
+                 "y":237
+                }, 
+                {
+                 "gid":773,
+                 "height":11.1099,
+                 "id":330,
+                 "name":"",
+                 "rotation":0,
+                 "type":"collider",
+                 "visible":true,
+                 "width":11.5382,
+                 "x":1162,
+                 "y":525
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -3625,7 +3685,7 @@
          "y":0
         }],
  "nextlayerid":35,
- "nextobjectid":327,
+ "nextobjectid":334,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.7.2",
@@ -3679,6 +3739,10 @@
         {
          "firstgid":13116,
          "source":"..\/..\/..\/..\/twilioquest-base\/tilesets\/Tileset_API-Interior.json"
+        }, 
+        {
+         "firstgid":14916,
+         "source":"..\/..\/..\/..\/.bundled\/tilesets\/TwilioQuestObjects.json"
         }],
  "tilewidth":24,
  "type":"map",
