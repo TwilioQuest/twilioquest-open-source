@@ -10,7 +10,7 @@ async function execGitWithArgs(helper, argString, execOptions = {}) {
     );
   }
 
-  return exec(`${TQ_GIT_EXE} ${argString}`, execOptions);
+  return exec(`"${TQ_GIT_EXE}" ${argString}`, execOptions);
 }
 
 module.exports = {
