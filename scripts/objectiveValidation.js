@@ -14,8 +14,8 @@ async function execGitWithArgs(helper, argString, execOptions = {}) {
   // Git path had spaces. During that time, we recommended player's add quotes to their environment
   // variable to circumvent the issue. Since we're doing that ourselves now, we want to be sure player's aren't
   if (
-    (TQ_GIT_EXE.startsWith('"') && TQ_GIT_EXE.endsWith('"')) ||
-    (TQ_GIT_EXE.startsWith("'") && TQ_GIT_EXE.endsWith("'"))
+    TQ_GIT_EXE.startsWith('"') || TQ_GIT_EXE.endsWith('"') ||
+    TQ_GIT_EXE.startsWith("'") || TQ_GIT_EXE.endsWith("'")
   ) {
     throw new Error(
       "TwilioQuest no longer requires you to surround your git executable path with quotation marks if it contains spaces. Go into Settings -> Variables and remove any quotes around the TQ_GIT_EXE variable!"
