@@ -25,7 +25,7 @@ module.exports = async (helper) => {
       [{ name: "LOCAL_GIT_USER_NAME", value: userName }]
     );
   } catch (err) {
-    helper.fail(`Something went wrong while tried to validate your git configuration!
+    helper.fail(`Something went wrong while trying to validate your git configuration!
     
     ${err.message}`);
     console.error(err);
